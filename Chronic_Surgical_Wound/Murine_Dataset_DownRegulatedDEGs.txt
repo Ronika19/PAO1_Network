@@ -1,0 +1,703 @@
+LocusId	TranscriptId	GeneName	FoldChange_Chronic	Pvalue_Chronic	KO_Id	COG_Id	COG_Category
+PA0001	AAG03391	dnaA	0.25	0.0000035	K02313	COG0593	DNA replication, recombination, and repair
+PA0003	AAG03393	recF	0.23	0.000013	K03629	COG1195	DNA replication, recombination, and repair
+PA0004	AAG03394	gyrB	0.18	0.000000013	-	COG0187	DNA replication, recombination, and repair
+PA0005	AAG03395	lptA	0.25	0.0058	K00655	COG0204	Lipid metabolism
+PA0006	AAG03396	-	0.17	0.0037	K03273	COG0241	Amino acid transport and metabolism
+PA0008	AAG03398	glyS	0.2	0.0000015	K01879	COG0751	Translation, ribosomal structure and biogenesis
+PA0009	AAG03399	glyQ	0.17	0.00000068	K01878	COG0752	Translation, ribosomal structure and biogenesis
+PA0016	AAG03406	trkA	0.19	0.00065	K03499	COG0569	Inorganic ion transport and metabolism
+PA0046	AAG03436	-	0.06	0.00000012	-	COG4259	Function unknown
+PA0047	AAG03437	-	0.18	0.0068	-	COG4380	Function unknown
+PA0070	AAG03460	-	0.11	7.9E-11	-	-	-
+PA0071	AAG03461	-	0.22	0.00001	-	COG1262	Function unknown
+PA0077	AAG03467	-	0.22	0.000024	K11891	COG3523	Intracellular trafficking, secretion, and    vesicular transport
+PA0080	AAG03470	-	0.24	0.0067	K11906	COG3521	Intracellular trafficking, secretion, and    vesicular transport
+PA0083	AAG03473	-	0.13	0.000027	K11901	COG3516	Intracellular trafficking, secretion, and    vesicular transport
+PA0084	AAG03474	-	0.17	0.00000005	K11900	COG3517	Intracellular trafficking, secretion, and    vesicular transport
+PA0085	AAG03475	hcp1	0.11	9.4E-12	K11903	COG3157	Intracellular trafficking, secretion,    and vesicular transport
+PA0086	AAG03476	-	0.18	0.00069	K11898	COG4455	General function prediction only
+PA0089	AAG03479	-	0.16	0.0036	K11895	COG3520	Intracellular trafficking, secretion, and    vesicular transport
+PA0091	AAG03481	-	0.22	0.0012	-	COG3501	Function unknown
+PA0170	AAG03560	-	0.06	0.0000027	-	-	-
+PA0171	AAG03561	-	0.17	0.0081	-	-	-
+PA0172	AAG03562	-	0.14	0.000026	-	COG2208	Signal transduction mechanisms / Transcription
+PA0195	ABG56537	-	0.18	0.00012	K00324	COG3288	Energy production and conversion
+PA0195.1	ABG56539	-	0.1	0.000000034	K00324	COG3288	Energy production and conversion
+PA0196	AAG03585	pntB	0.13	0.000000069	K00325	COG1282	Energy production and conversion
+PA0201	AAG03590	-	0.11	0.0000023	K07002	COG3545	General function prediction only
+PA0280	AAG03669	cysA	0.14	0.00003	K02045	COG1118	Inorganic ion transport and metabolism
+PA0282	AAG03671	cysT	0.1	0.0087	K02046	COG0555	Posttranslational modification, protein turnover, chaperones
+PA0291	AAG03680	oprE	0.14	9.1E-11	-	-	-
+PA0300	AAG03689	spuD	0.21	0.000005	K11073	COG0687	Amino acid transport and metabolism
+PA0302	AAG03691	spuF	0.21	0.008	K11076	COG3842	Amino acid transport and metabolism
+PA0304	AAG03693	spuH	0.15	0.00032	K11074	COG1177	Amino acid transport and metabolism
+PA0316	AAG03705	serA	0.19	0.00000019	K00058	COG0111	Amino acid transport and metabolism
+PA0317	AAG03706	-	0.22	0.0000099	-	COG0277	Energy production and conversion
+PA0330	AAG03719	rpiA	0.16	0.000011	K01807	COG0120	Carbohydrate transport and metabolism
+PA0331	AAG03720	-	0.16	0.00092	K01754	COG1171	Amino acid transport and metabolism
+PA0336	AAG03725	ygdP	0.18	0.0000028	K08311	COG0494	DNA replication, recombination, and repair / General function prediction only
+PA0337	AAG03726	ptsP	0.23	0.000056	K08484	COG3605	Signal transduction mechanisms
+PA0342	AAG03731	thyA	0.18	0.0003	K00560	COG0207	Nucleotide transport and metabolism
+PA0362	AAG03751	fdx1	0.25	0.0019	-	-	-
+PA0363	AAG03752	coaD	0.1	0.000048	K00954	COG0669	Coenzyme metabolism
+PA0374	AAG03763	ftsE	0.23	0.0045	K09812	COG2884	Cell division and chromosome partitioning
+PA0380	AAG03769	-	0.16	0.00026	K03154	COG2104	Coenzyme metabolism
+PA0382	AAG03771	micA	0.21	0.00073	K03439	COG0220	General function prediction only
+PA0390	AAG03779	metX	0.15	0.0000089	K00641	COG2021	Amino acid transport and metabolism
+PA0408	AAG03797	pilG	0.21	0.00000024	K02657	COG0745	Signal transduction mechanisms / Transcription
+PA0409	AAG03798	pilH	0.18	0.0000074	K02658	COG0745	Signal transduction mechanisms / Transcription
+PA0410	AAG03799	pilI	0.21	0.0012	K02659	COG0835	Cell motility and secretion / Signal transduction mechanisms
+PA0420	AAG03809	bioA	0.18	0.000041	K00833	COG0161	Coenzyme metabolism
+PA0430	AAG03819	metF	0.18	0.00027	K00297	COG0685	Amino acid transport and metabolism
+PA0456	AAG03845	-	0.13	4.5E-11	K03704	COG1278	Transcription
+PA0485	AAG03874	-	0.2	0.0033	K05786	COG2962	General function prediction only
+PA0527.1	PA0527.1-1	rsmY	0.18	7.3E-13	-	-	-
+PA0542	AAG03931	-	0.16	0.0007	-	-	-
+PA0548	AAG03937	tktA	0.21	0.00000034	K00615	COG0021	Carbohydrate transport and metabolism
+PA0551	AAG03940	-	0.1	0.00000019	K03472	COG0057	Carbohydrate transport and metabolism
+PA0552	AAG03941	-	0.18	0.00000036	K00927	COG0126	Carbohydrate transport and metabolism
+PA0554	AAG03943	-	0.23	0.000045	-	-	-
+PA0579	AAG03968	rpsU	0.08	3.2E-15	K02970	COG0828	Translation, ribosomal structure and biogenesis
+PA0580	AAG03969	-	0.13	0.000045	K01409	COG0533	Posttranslational modification, protein turnover, chaperones
+PA0582	AAG03971	folB	0.09	0.000027	K01633	COG1539	Coenzyme metabolism
+PA0583	AAG03972	-	0.18	0.0066	K00950	COG0801	Coenzyme metabolism
+PA0604	AAG03993	-	0.19	0.0002	K02055	COG0687	Amino acid transport and metabolism
+PA0607	AAG03996	-	0.17	0.0007	K01783	COG0036	Carbohydrate transport and metabolism
+PA0608	AAG03997	-	0.17	0.000026	K01091	COG0546	General function prediction only
+PA0609	AAG03998	trpE	0.17	0.0000005	K01657	COG0147	Amino acid transport and metabolism / Coenzyme metabolism
+PA0614	AAG04003	-	0.22	0.00047	-	-	-
+PA0619	AAG04008	-	0.2	0.0049	-	COG4385	General function prediction only
+PA0628	AAG04017	-	0.21	0.00026	K06905	COG3500	General function prediction only
+PA0632	AAG04021	-	0.18	0.0028	-	-	-
+PA0636	AAG04025	-	0.18	0.000000034	-	COG5281	Function unknown
+PA0644	AAG04033	-	0.16	0.0007	-	-	-
+PA0648	AAG04037	-	0.25	0.0049	-	-	-
+PA0649	AAG04038	trpG	0.23	0.0013	K01658	COG0512	Amino acid transport and metabolism / Coenzyme metabolism
+PA0650	AAG04039	trpD	0.17	0.00000023	K00766	COG0547	Amino acid transport and metabolism
+PA0654	AAG04043	speD	0.08	0.00000048	K01611	COG1586	Amino acid transport and metabolism
+PA0668	AAG04057	tyrZ	0.15	1.2E-10	K01866	COG0162	Translation, ribosomal structure and biogenesis
+PA0705	AAG04094	migA	0.17	0.0000099	K12987	COG1215	Cell envelope biogenesis, outer membrane
+PA0760	AAG04149	-	0.07	1.6E-11	K09159	COG2938	Function unknown
+PA0767	AAG04156	lepA	0.14	0.00000035	K03596	COG0481	Cell envelope biogenesis, outer membrane
+PA0768	AAG04157	lepB	0.24	0.000075	K03100	COG0681	Intracellular trafficking and secretion
+PA0769	AAG04158	-	0.24	0.0013	-	-	-
+PA0770	AAG04159	-	0.13	0.000011	K03685	COG0571	Transcription
+PA0771	AAG04160	-	0.15	0.000001	K03595	COG1159	General function prediction only
+PA0773	AAG04162	pdxJ	0.19	0.0065	K03474	COG0854	Coenzyme metabolism
+PA0820	AAG04209	-	0.22	0.000071	K07453	COG3183	Defense mechanisms
+PA0826.2	PA0826.2-1	-	0.16	6.6E-13	-	-	-
+PA0837	AAG04226	slyD	0.18	8.2E-09	K03775	COG1047	Posttranslational modification, protein turnover, chaperones
+PA0888	AAG04277	aotJ	0.25	0.0006	K10022	COG0834	Amino acid transport and metabolism / Signal transduction mechanisms
+PA0903	AAG04292	alaS	0.15	2.6E-10	K01872	COG0013	Translation, ribosomal structure and biogenesis
+PA0904	AAG04293	lysC	0.17	0.000000037	K00928	COG0527	Amino acid transport and metabolism
+PA0916	AAG04305	-	0.19	0.00024	K14441	COG0621	Translation, ribosomal structure and biogenesis
+PA0932	AAG04321	cysM	0.2	0.00069	K12339	COG0031	Amino acid transport and metabolism
+PA0937	AAG04326	-	0.2	0.000057	K09912	COG3122	Function unknown
+PA0938	AAG04327	-	0.22	0.0000056	-	COG3765	Cell envelope biogenesis, outer membrane
+PA0945	AAG04334	purM	0.14	0.0000063	K01933	COG0150	Nucleotide transport and metabolism
+PA0947	AAG04336	-	0.18	0.0015	K10763	COG0593	DNA replication, recombination, and repair
+PA0948	AAG04337	-	0.09	0.0033	-	COG3308	Function unknown
+PA0955	AAG04344	-	0.23	0.0011	-	-	-
+PA0956	AAG04345	proS	0.15	0.000000032	K01881	COG0442	Translation, ribosomal structure and biogenesis
+PA0958	AAG04347	oprD	0.1	3.2E-16	-	-	-
+PA0963	AAG04352	aspS	0.2	0.000000056	K01876	COG0173	Translation, ribosomal structure and biogenesis
+PA0964	AAG04353	pmpR	0.12	1.2E-11	-	COG0217	Function unknown
+PA0965	AAG04354	ruvC	0.08	0.000012	K01159	COG0817	DNA replication, recombination, and repair
+PA0966	AAG04355	ruvA	0.16	0.00012	K03550	COG0632	DNA replication, recombination, and repair
+PA0967	AAG04356	ruvB	0.22	0.0002	K03551	COG2255	DNA replication, recombination, and repair
+PA0970	AAG04359	tolR	0.25	0.00092	K03560	COG0848	Intracellular trafficking and secretion
+PA0972	AAG04361	tolB	0.19	0.00000011	K03641	COG0823	Intracellular trafficking and secretion
+PA0973	AAG04362	oprL	0.14	3.2E-12	K03640	COG2885	Cell envelope biogenesis, outer membrane
+PA0982	AAG04371	-	0.23	0.0039	-	COG1651	Posttranslational modification, protein turnover, chaperones
+PA0988	AAG04377	-	0.21	0.0024	K07107	COG0824	General function prediction only
+PA1007	AAG04396	-	0.16	0.000032	K03548	COG0628	General function prediction only
+PA1008	AAG04397	-	0.16	0.00000014	K03564	COG1225	Posttranslational modification, protein turnover, chaperones
+PA1010	AAG04399	dapA	0.21	0.0000083	K01714	COG0329	Amino acid transport and metabolism / Cell envelope biogenesis, outer membrane
+PA1011	AAG04400	-	0.16	0.000000042	K07287	COG3317	Cell envelope biogenesis, outer membrane
+PA1012	AAG04401	-	0.16	0.0000007	-	COG1235	General function prediction only
+PA1013	AAG04402	purC	0.11	1.7E-12	K01923	COG0152	Nucleotide transport and metabolism
+PA1047	AAG04436	-	0.2	0.0051	-	COG1680	Defense mechanisms
+PA1070	AAG04459	braG	0.21	0.0049	K01996	COG0410	Amino acid transport and metabolism
+PA1071	AAG04460	braF	0.06	0.0095	K01995	COG0411	Amino acid transport and metabolism
+PA1072	AAG04461	braE	0.16	0.0039	K01998	COG4177	Amino acid transport and metabolism
+PA1079	AAG04468	flgD	0.25	0.0025	K02389	COG1843	Cell motility and secretion
+PA1081	AAG04470	flgF	0.09	0.0000013	K02391	COG4787	Cell motility and secretion
+PA1082	AAG04471	flgG	0.25	0.00051	K02392	COG4786	Cell motility and secretion
+PA1088	AAG04477	-	0.2	0.0007	-	COG4106	General function prediction only
+PA1089	AAG04478	-	0.2	0.0023	-	COG0560	Amino acid transport and metabolism
+PA1156	AAG04545	nrdA	0.24	0.000022	K00525	COG0209	Nucleotide transport and metabolism
+PA1159	AAG04548	-	0.21	0.0000017	K03704	COG1278	Transcription
+PA1183	AAG04572	dctA	0.09	1E-11	K11103	COG1301	Energy production and conversion
+PA1271	AAG04660	-	0.2	0.001	K16092	COG4206	Coenzyme metabolism
+PA1337	AAG04726	ansB	0.13	0.0024	K05597	COG0252	Amino acid transport and metabolism / Translation, ribosomal structure and biogenesis
+PA1338	AAG04727	-	0.16	0.0022	K00681	COG0405	Amino acid transport and metabolism
+PA1339	AAG04728	-	0.08	0.000076	K10004	COG1126	Amino acid transport and metabolism
+PA1340	AAG04729	-	0.07	0.00062	K10002	COG0765	Amino acid transport and metabolism
+PA1341	AAG04730	-	0.12	0.0097	K10003	COG0765	Amino acid transport and metabolism
+PA1342	AAG04731	-	0.08	0.0011	K10001	COG0834	Amino acid transport and metabolism / Signal transduction mechanisms
+PA1371	AAG04760	-	0.23	0.003	-	COG5619	Function unknown
+PA1456	AAG04845	cheY	0.13	2.9E-09	K03413	COG0784	Signal transduction mechanisms
+PA1462	AAG04851	-	0.25	0.0016	K03496	COG1192	Cell division and chromosome partitioning
+PA1464	AAG04853	-	0.15	0.0000016	K03408	COG0835	Cell motility and secretion / Signal transduction mechanisms
+PA1479	AAG04868	ccmE	0.18	0.0024	K02197	COG2332	Posttranslational modification, protein turnover, chaperones
+PA1481	AAG04870	ccmG	0.24	0.0054	K02199	COG0526	Posttranslational modification, protein turnover, chaperones / Energy production and conversion
+PA1493	AAG04882	cysP	0.09	1.2E-13	K02048	COG1613	Inorganic ion transport and metabolism
+PA1505	AAG04894	-	0.19	0.0002	K03639	COG2896	Coenzyme metabolism
+PA1526	AAG04915	-	0.19	0.000024	-	COG1802	Transcription
+PA1530	AAG04919	-	0.16	0.00065	-	-	-
+PA1533	AAG04922	-	0.12	0.0000038	K09747	COG0718	Function unknown
+PA1552.1	ADN93059	-	0.1	1.5E-09	K00407	COG4736	Posttranslational modification, protein turnover, chaperones
+PA1553	AAG04942	-	0.1	2E-13	K00405	COG2993	Energy production and conversion
+PA1554	AAG04943	-	0.13	1.4E-11	K00404	COG3278	Posttranslational modification, protein turnover, chaperones
+PA1581	AAG04970	sdhC	0.1	0.000027	K00241	COG2009	Energy production and conversion
+PA1582	AAG04971	sdhD	0.1	9.4E-12	K00242	COG2142	Energy production and conversion
+PA1583	AAG04972	sdhA	0.11	5.8E-15	K00239	COG1053	Energy production and conversion
+PA1584	AAG04973	sdhB	0.1	3.9E-16	K00240	COG0479	Energy production and conversion
+PA1585	AAG04974	sucA	0.16	8.7E-11	K00164	COG0567	Energy production and conversion
+PA1586	AAG04975	sucB	0.19	0.00000013	K00658	COG0508	Energy production and conversion
+PA1587	AAG04976	lpdG	0.12	9.2E-13	K00382	COG1249	Energy production and conversion
+PA1588	AAG04977	sucC	0.09	4.1E-18	K01903	COG0045	Energy production and conversion
+PA1589	AAG04978	sucD	0.1	3.7E-14	K01902	COG0074	Energy production and conversion
+PA1590	AAG04979	braB	0.24	0.0012	K03311	COG1114	Amino acid transport and metabolism
+PA1609	AAG04998	fabB	0.08	3.7E-16	K00647	COG0304	Lipid metabolism / Secondary metabolites biosynthesis, transport, and catabolism
+PA1610	AAG04999	fabA	0.08	1.2E-13	K01716	COG0764	Lipid metabolism
+PA1632	AAG05021	kdpF	0.06	0.0000045	K01545	-	-
+PA1674	AAG05063	-	0.2	0.000013	K01495	COG0302	Coenzyme metabolism
+PA1678	AAG05067	-	0.11	0.00006	K07320	COG2890	Translation, ribosomal structure and biogenesis
+PA1683	AAG05072	-	0.2	0.0022	K08964	COG0235	Carbohydrate transport and metabolism
+PA1687	AAG05076	speE	0.12	0.0000037	K00797	COG0421	Amino acid transport and metabolism
+PA1688	AAG05077	-	0.19	0.0000096	-	COG3391	Function unknown
+PA1766	AAG05155	-	0.09	5.2E-13	-	-	-
+PA1767	AAG05156	-	0.17	0.0000063	-	-	-
+PA1768	AAG05157	-	0.25	0.0011	-	COG4067	Posttranslational modification, protein turnover, chaperones
+PA1770	AAG05159	ppsA	0.24	0.0000003	K01007	COG0574	Carbohydrate transport and metabolism
+PA1774	AAG05163	crfX	0.21	0.001	-	-	-
+PA1775	AAG05164	cmpX	0.17	0.000000035	-	-	-
+PA1776	AAG05165	sigX	0.18	4.9E-09	K03088	COG1595	Transcription
+PA1777	AAG05166	oprF	0.13	4E-15	K03286	COG2885	Cell envelope biogenesis, outer membrane
+PA1793	AAG05182	ppiB	0.14	0.0000096	K03768	COG0652	Posttranslational modification, protein turnover, chaperones
+PA1794	AAG05183	glnS	0.22	0.0000062	K01886	COG0008	Translation, ribosomal structure and biogenesis
+PA1795	AAG05184	cysS	0.14	0.000000015	K01883	COG0215	Translation, ribosomal structure and biogenesis
+PA1800	AAG05189	-	0.1	2.7E-17	K03545	COG0544	Posttranslational modification, protein turnover, chaperones
+PA1804	AAG05193	hupB	0.05	6E-15	K03530	COG0776	DNA replication, recombination, and repair
+PA1805	AAG05194	ppiD	0.15	6.7E-10	K03770	COG0760	Posttranslational modification, protein turnover, chaperones
+PA1821	AAG05210	-	0.25	0.00054	K01692	COG1024	Lipid metabolism
+PA1823	AAG05212	-	0.19	0.003	K03426	COG2816	DNA replication, recombination, and repair
+PA1830	AAG05219	-	0.21	0.0000043	-	COG3255	Lipid metabolism
+PA1832	AAG05221	-	0.23	0.0000026	K04774	COG0616	Posttranslational modification, protein turnover, chaperones / Intracellular trafficking and secretion
+PA1837	AAG05226	-	0.09	0.0000032	-	COG3749	Function unknown
+PA1838	AAG05227	cysI	0.05	0.000000013	K00381	COG0155	Inorganic ion transport and metabolism
+PA1843	AAG05232	metH	0.15	8.6E-10	K00548	COG1410	Amino acid transport and metabolism
+PA1913	AAG05301	-	0.07	0.00007	-	-	-
+PA1939	AAG05327	-	0.18	0.000000084	-	COG3593	DNA replication, recombination, and repair
+PA1963	AAG05351	-	0.19	0.00026	-	-	-
+PA1964	AAG05352	-	0.23	0.00048	-	COG0488	General function prediction only
+PA2204	AAG05592	-	0.18	0.00032	K02030	COG0834	Amino acid transport and metabolism / Signal transduction mechanisms
+PA2231	AAG05619	pslA	0.24	0.000014	-	COG2148	Cell envelope biogenesis, outer membrane
+PA2232	AAG05620	pslB	0.19	0.00018	K00971	COG0836	Cell envelope biogenesis, outer membrane
+PA2233	AAG05621	pslC	0.1	0.0024	K12992	COG1216	General function prediction only
+PA2234	AAG05622	pslD	0.1	0.000033	-	COG1596	Cell wall/membrane/envelope biogenesis
+PA2235	AAG05623	pslE	0.17	0.0000038	-	COG3206	Cell envelope biogenesis, outer membrane
+PA2236	AAG05624	pslF	0.21	0.0092	-	COG0438	Cell envelope biogenesis, outer membrane
+PA2240	AAG05628	pslJ	0.15	0.00041	-	-	-
+PA2242	AAG05630	pslL	0.16	0.0067	-	COG3594	Carbohydrate transport and metabolism
+PA2463	AAG05851	-	0.12	0.000014	-	COG2831	Intracellular trafficking and secretion
+PA2464	AAG05852	-	0.19	0.0011	-	-	-
+PA2501	AAG05889	-	0.21	0.00034	-	-	-
+PA2532	AAG05920	-	0.25	0.0083	K11065	COG2077	Posttranslational modification, protein turnover, chaperones
+PA2536	AAG05924	-	0.18	0.0025	K00981	COG4589	General function prediction only
+PA2540	AAG05928	-	0.19	0.002	-	COG2267	Lipid metabolism
+PA2543	AAG05931	-	0.21	0.00028	K07278	COG0729	Cell envelope biogenesis, outer membrane
+PA2560	AAG05948	-	0.08	0.000013	-	-	-
+PA2582	AAG05970	-	0.11	2.4E-11	K03607	COG3109	Signal transduction mechanisms
+PA2619	AAG06007	infA	0.12	0.000000018	K02518	COG0361	Translation, ribosomal structure and biogenesis
+PA2624	AAG06012	-	0.22	0.000019	K00031	COG2838	Energy production and conversion
+PA2638	AAG06026	nuoB	0.25	0.00001	K00331	COG0377	Energy production and conversion
+PA2640	AAG06028	nuoE	0.16	0.000022	K00334	COG1905	Energy production and conversion
+PA2641	AAG06029	nuoF	0.12	4.2E-10	K00335	COG1894	Energy production and conversion
+PA2647	AAG06035	nuoL	0.2	0.000088	K00341	COG1009	Energy production and conversion / Inorganic ion transport and metabolism
+PA2667	AAG06055	-	0.22	0.00002	-	-	-
+PA2730	AAG06118	-	0.19	0.00042	K09805	COG2958	Function unknown
+PA2731	AAG06119	-	0.18	0.000084	-	-	-
+PA2733	AAG06121	-	0.2	0.0002	-	COG3943	General function prediction only
+PA2734	AAG06122	-	0.23	0.000032	K01154	COG0732	Defense mechanisms
+PA2735	AAG06123	-	0.24	0.000002	K03427	COG0286	Defense mechanisms
+PA2741	AAG06129	rplT	0.1	3.9E-19	K02887	COG0292	Translation, ribosomal structure and biogenesis
+PA2742	AAG06130	rpmI	0.17	4.3E-10	K02916	COG0291	Translation, ribosomal structure and biogenesis
+PA2743	AAG06131	infC	0.09	4.8E-18	K02520	COG0290	Translation, ribosomal structure and biogenesis
+PA2744	AAG06132	thrS	0.16	5.4E-09	K01868	COG0441	Translation, ribosomal structure and biogenesis
+PA2755	AAG06143	-	0.18	0.000012	K08276	COG4574	General function prediction only
+PA2760	AAG06148	-	0.09	3.3E-18	-	-	-
+PA2765	AAG06153	-	0.25	0.0033	K07223	COG2837	Inorganic ion transport and metabolism
+PA2800	AAG06188	-	0.21	0.000012	K04754	COG2853	Cell envelope biogenesis, outer membrane
+PA2805	AAG06193	-	0.17	0.0000013	-	-	-
+PA2851	AAG06239	-	0.08	1.9E-12	K02356	COG0231	Translation, ribosomal structure and biogenesis
+PA2853	AAG06241	oprI	0.19	4.4E-10	-	-	-
+PA2867	AAG06255	-	0.18	0.00027	-	COG0840	Cell motility and secretion / Signal transduction mechanisms
+PA2950	AAG06338	-	0.18	9.7E-09	K00209	COG3007	Function unknown
+PA2952	AAG06340	etfB	0.23	0.000002	K03521	COG2086	Energy production and conversion
+PA2957	AAG06345	-	0.16	0.0000077	-	COG1309	Transcription
+PA2959	AAG06347	-	0.19	0.00038	K03424	COG0084	DNA replication, recombination, and repair
+PA2960	AAG06348	pilZ	0.21	0.000069	K02676	COG3215	Cell motility and secretion / Intracellular trafficking and secretion
+PA2964	AAG06352	pabC	0.17	0.0001	K02619	COG0115	Amino acid transport and metabolism / Coenzyme metabolism
+PA2965	AAG06353	-	0.17	0.0000016	K09458	COG0304	Lipid metabolism / Secondary metabolites biosynthesis, transport, and catabolism
+PA2966	AAG06354	acpP	0.04	2.4E-33	K02078	COG0236	Lipid metabolism / Secondary metabolites biosynthesis, transport, and catabolism
+PA2967	AAG06355	fabG	0.09	1.3E-16	K00059	COG1028	Secondary metabolites biosynthesis, transport, and catabolism / General function prediction only
+PA2968	AAG06356	fabD	0.08	5.2E-12	K00645	COG0331	Lipid metabolism
+PA2969	AAG06357	plsX	0.15	0.00000094	K03621	COG0416	Lipid metabolism
+PA2970	AAG06358	rpmF	0.06	2.9E-19	K02911	COG0333	Translation, ribosomal structure and biogenesis
+PA2971	AAG06359	-	0.1	6.2E-12	K07040	COG1399	General function prediction only
+PA2973	AAG06361	-	0.23	0.00025	K04773	COG0616	Posttranslational modification, protein turnover, chaperones / Intracellular trafficking and secretion
+PA2975	AAG06363	rluC	0.23	0.000044	K06179	COG0564	Translation, ribosomal structure and biogenesis
+PA2976	AAG06364	-	0.16	0.000000001	K08300	COG1530	Translation, ribosomal structure and biogenesis
+PA2982	AAG06370	-	0.2	0.003	K03559	COG0848	Intracellular trafficking and secretion
+PA2986	AAG06374	-	0.17	0.00000083	K09808	COG4591	Cell envelope biogenesis, outer membrane
+PA2992	AAG06380	-	0.12	0.0052	K05952	COG2991	Function unknown
+PA2994	AAG06382	nqrF	0.14	0.000000089	K00351	COG2871	Energy production and conversion
+PA2996	AAG06384	nqrD	0.21	0.00064	K00349	COG1347	Energy production and conversion
+PA3001	AAG06389	-	0.15	0.00063	K00134	COG0057	Carbohydrate transport and metabolism
+PA3011	AAG06399	topA	0.23	0.000064	K03168	COG0550	DNA replication, recombination, and repair
+PA3085	AAG06473	-	0.18	0.0049	K09916	COG3139	Function unknown
+PA3088	AAG06476	-	0.14	0.00088	K00858	COG0061	Coenzyme metabolism
+PA3108	AAG06496	purF	0.16	0.000000078	K00764	COG0034	Nucleotide transport and metabolism
+PA3109	AAG06497	-	0.23	0.00092	K03558	COG1286	General function prediction only
+PA3110	AAG06498	-	0.18	0.00028	K03749	COG3147	Function unknown
+PA3111	AAG06499	folC	0.11	2.8E-11	K11754	COG0285	Coenzyme metabolism
+PA3112	AAG06500	accD	0.09	3.9E-15	K01963	COG0777	Lipid metabolism
+PA3116	AAG06504	-	0.1	7.6E-11	-	COG0136	Amino acid transport and metabolism
+PA3117	AAG06505	-	0.19	0.00000066	K00133	COG0136	Amino acid transport and metabolism
+PA3118	AAG06506	leuB	0.11	3.5E-10	K00052	COG0473	Amino acid transport and metabolism
+PA3134	AAG06522	gltX	0.18	0.0000043	K01885	COG0008	Translation, ribosomal structure and biogenesis
+PA3139	AAG06527	-	0.17	0.00000046	K00832	COG1448	Amino acid transport and metabolism
+PA3143	AAG06531	-	0.16	0.0013	K07497	-	-
+PA3144	AAG06532	-	0.16	0.000002	K07497	-	-
+PA3146	AAG06534	wbpK	0.17	0.0000005	-	COG0451	Cell envelope biogenesis, outer membrane / Carbohydrate transport and metabolism
+PA3147	AAG06535	wbpJ	0.12	5.3E-12	-	COG0438	Cell envelope biogenesis, outer membrane
+PA3148	AAG06536	wbpI	0.1	1.1E-14	K13019	COG0381	Cell envelope biogenesis, outer membrane
+PA3149	AAG06537	wbpH	0.08	2.6E-14	-	COG0438	Cell envelope biogenesis, outer membrane
+PA3150	AAG06538	wbpG	0.1	1.2E-13	-	COG0037	Cell cycle control, cell division, chromosome partitioning
+PA3151	AAG06539	-	0.06	4E-18	K02500	COG0107	Amino acid transport and metabolism
+PA3152	AAG06540	-	0.14	0.0000065	K02501	COG0118	Amino acid transport and metabolism
+PA3153	AAG06541	-	0.13	5.8E-09	-	COG2244	General function prediction only
+PA3154	AAG06542	-	0.15	3.1E-10	-	-	-
+PA3155	AAG06543	wbpE	0.13	1.1E-11	K13017	COG0399	Cell envelope biogenesis, outer membrane
+PA3156	AAG06544	wbpD	0.12	4.3E-09	K13018	COG1045	Amino acid transport and metabolism
+PA3157	AAG06545	-	0.22	0.000016	-	COG1835	Lipid metabolism
+PA3158	AAG06546	wbpB	0.12	6.9E-13	K13016	COG0673	General function prediction only
+PA3159	AAG06547	wbpA	0.2	0.000000051	K13015	COG0677	Cell envelope biogenesis, outer membrane
+PA3162	AAG06550	rpsA	0.08	1E-21	K02945	COG0539	Translation, ribosomal structure and biogenesis
+PA3163	AAG06551	-	0.13	0.0000088	K00945	COG0283	Nucleotide transport and metabolism
+PA3165	AAG06553	-	0.25	0.0013	K00817	COG0079	Amino acid transport and metabolism
+PA3166	AAG06554	pheA	0.24	0.0011	K14170	COG0077	Amino acid transport and metabolism
+PA3167	AAG06555	serC	0.19	0.0000012	K00831	COG1932	Coenzyme metabolism / Amino acid transport and metabolism
+PA3168	AAG06556	gyrA	0.13	4E-11	K02469	COG0188	DNA replication, recombination, and repair
+PA3169	AAG06557	-	0.17	0.0025	K08963	COG0182	Translation, ribosomal structure and biogenesis
+PA3185	AAG06573	-	0.2	0.0003	-	COG0676	Carbohydrate transport and metabolism
+PA3242	AAG06630	-	0.17	0.00057	K02517	COG1560	Cell envelope biogenesis, outer membrane
+PA3244	AAG06632	minD	0.13	1.1E-11	K03609	COG2894	Cell division and chromosome partitioning
+PA3245	AAG06633	minE	0.11	1.7E-12	K03608	COG0851	Cell division and chromosome partitioning
+PA3247	AAG06635	-	0.2	0.0053	K01269	COG1362	Amino acid transport and metabolism
+PA3255	AAG06643	-	0.14	0.00025	-	COG0560	Amino acid transport and metabolism
+PA3262	AAG06650	-	0.2	0.0000014	K03773	COG0545	Posttranslational modification, protein turnover, chaperones
+PA3266	AAG06654	capB	0.06	7.3E-18	K03704	COG1278	Transcription
+PA3286	AAG06674	-	0.22	0.0022	K16872	COG0332	acyl-carrier-protein
+PA3295	AAG06683	-	0.12	0.0032	K02503	COG0537	Nucleotide transport and metabolism / Carbohydrate transport and metabolism / General function prediction only
+PA3301	AAG06689	-	0.06	2.1E-09	-	COG2267	Lipid metabolism
+PA3308	AAG06696	hepA	0.19	0.000037	K03580	COG0553	Transcription / DNA replication, recombination, and repair
+PA3337	AAG06725	rfaD	0.23	0.000015	K03274	COG0451	Cell envelope biogenesis, outer membrane / Carbohydrate transport and metabolism
+PA3343	AAG06731	-	0.25	0.0019	-	COG3706	Signal transduction mechanisms
+PA3344	AAG06732	recQ	0.25	0.002	K03654	COG0514	DNA replication, recombination, and repair
+PA3353	AAG06741	-	0.17	0.0000009	-	COG5581	Signal transduction mechanisms
+PA3397	AAG06785	-	0.17	0.000014	K00528	COG1018	Energy production and conversion
+PA3435	AAG06823	-	0.13	0.0056	K06205	COG0716	Energy production and conversion
+PA3441	AAG06829	-	0.05	0.0000085	-	COG3585	Coenzyme metabolism
+PA3442	AAG06830	-	0.05	0.000000076	K15555	COG1116	Inorganic ion transport and metabolism
+PA3443	AAG06831	-	0.13	0.001	K15554	COG0600	Inorganic ion transport and metabolism
+PA3446	AAG06834	-	0.1	0.0006	K00299	COG0431	General function prediction only
+PA3480	AAG06868	-	0.1	0.00000023	K01494	COG0717	Nucleotide transport and metabolism
+PA3482	AAG06870	metG	0.25	0.00069	K01874	COG0143	Translation, ribosomal structure and biogenesis
+PA3483	AAG06871	-	0.17	0.00000027	-	-	-
+PA3525	AAG06913	argG	0.1	8.6E-10	K01940	COG0137	Amino acid transport and metabolism
+PA3531	AAG06919	bfrB	0.12	1.7E-15	K03594	COG2193	Inorganic ion transport and metabolism
+PA3533	AAG06921	-	0.23	0.000043	K07390	COG0278	Posttranslational modification, protein turnover, chaperones
+PA3538	AAG06926	-	0.11	0.000000024	K02010	COG3842	Amino acid transport and metabolism
+PA3612	AAG07000	-	0.23	0.0012	K09954	COG3530	Function unknown
+PA3621	AAG07009	fdxA	0.16	0.000000054	K05524	COG1146	Energy production and conversion
+PA3625	AAG07013	surE	0.14	0.000013	K03787	COG0496	General function prediction only
+PA3627	AAG07015	ygbB	0.23	0.0038	K01770	COG0245	Lipid metabolism
+PA3633	AAG07021	ygbP	0.13	0.0031	K00991	COG1211	Lipid metabolism
+PA3635	AAG07023	-	0.11	5.1E-16	K01689	COG0148	Carbohydrate transport and metabolism
+PA3636	AAG07024	kdsA	0.16	5.6E-09	K01627	COG2877	Cell envelope biogenesis, outer membrane
+PA3637	AAG07025	pyrG	0.15	7.4E-10	K01937	COG0504	Nucleotide transport and metabolism
+PA3639	AAG07027	accA	0.14	0.0000024	K01962	COG0825	Lipid metabolism
+PA3642	AAG07030	rnhB	0.17	0.000066	K03470	COG0164	DNA replication, recombination, and repair
+PA3643	AAG07031	lpxB	0.16	0.00000065	K00748	COG0763	Cell envelope biogenesis, outer membrane
+PA3644	AAG07032	lpxA	0.14	0.000000021	K00677	COG1043	acyl carrier protein
+PA3645	AAG07033	fabZ	0.1	5.3E-11	K02372	COG0764	Lipid metabolism
+PA3646	AAG07034	lpxD	0.14	1.5E-09	K02536	COG1044	3-hydroxymyristoyl
+PA3647	AAG07035	-	0.15	4.6E-09	K06142	COG2825	Cell envelope biogenesis, outer membrane
+PA3648	AAG07036	-	0.13	4.2E-13	K07277	COG4775	Cell envelope biogenesis, outer membrane
+PA3650	AAG07038	-	0.15	0.000000012	K00099	COG0743	Lipid metabolism
+PA3651	AAG07039	cdsA	0.2	0.0007	K00981	COG0575	Lipid metabolism
+PA3652	AAG07040	uppS	0.08	7E-16	K00806	COG0020	Lipid metabolism
+PA3653	AAG07041	-	0.07	0.00098	K02838	COG0233	Translation, ribosomal structure and biogenesis
+PA3654	AAG07042	pyrH	0.1	7.7E-12	K09903	COG0528	Nucleotide transport and metabolism
+PA3655	AAG07043	-	0.17	4.6E-09	K02357	COG0264	Translation, ribosomal structure and biogenesis
+PA3656	AAG07044	rpsB	0.12	1.4E-13	K02967	COG0052	Translation, ribosomal structure and biogenesis
+PA3666	AAG07054	dapD	0.14	0.000015	K00674	COG2171	Amino acid transport and metabolism
+PA3686	AAG07074	-	0.18	0.000006	K00939	COG0563	Nucleotide transport and metabolism
+PA3700	AAG07088	lysS	0.19	0.0000034	K04567	COG1190	Translation, ribosomal structure and biogenesis
+PA3701	ADN93061	-	0.24	0.00038	K02836	-	-
+PA3716	AAG07103	-	0.1	1.3E-09	-	-	-
+PA3722	AAG07109	-	0.1	0.0000032	-	-	-
+PA3725	AAG07112	recJ	0.14	0.00042	K07462	COG0608	DNA replication, recombination, and repair
+PA3727	AAG07114	-	0.08	0.00019	-	COG1502	Lipid metabolism
+PA3729	AAG07116	-	0.17	4.6E-09	-	COG2268	Function unknown
+PA3735	AAG07122	thrC	0.17	0.000018	K01733	COG0498	Amino acid transport and metabolism
+PA3736	AAG07123	-	0.18	0.000032	K00003	COG0460	Amino acid transport and metabolism
+PA3737	AAG07124	dsbC	0.19	0.00025	K03981	COG1651	Posttranslational modification, protein turnover, chaperones
+PA3742	AAG07129	rplS	0.12	9.1E-09	K02884	COG0335	Translation, ribosomal structure and biogenesis
+PA3743	AAG07130	trmD	0.09	1.6E-10	K00554	COG0336	Translation, ribosomal structure and biogenesis
+PA3744	AAG07131	rimM	0.08	2.3E-13	K02860	COG0806	Translation, ribosomal structure and biogenesis
+PA3745	AAG07132	rpsP	0.09	0.000005	K02959	COG0228	Translation, ribosomal structure and biogenesis
+PA3746	AAG07133	-	0.13	0.00000002	K03106	COG0541	Intracellular trafficking and secretion
+PA3747	AAG07134	-	0.23	0.0042	-	COG4137	General function prediction only
+PA3763	AAG07150	purL	0.19	0.000000024	K01952	COG0046	Nucleotide transport and metabolism
+PA3764	AAG07151	-	0.11	5.8E-10	-	COG4623	Cell envelope biogenesis, outer membrane
+PA3793	AAG07180	-	0.14	0.0016	-	-	-
+PA3799	AAG07186	-	0.23	0.000075	K03977	COG1160	General function prediction only
+PA3800	AAG07187	-	0.14	5.8E-10	-	COG1520	Function unknown
+PA3801	AAG07188	-	0.14	0.00000025	-	COG2976	Function unknown
+PA3802	AAG07189	hisS	0.19	0.0000048	K01892	COG0124	Translation, ribosomal structure and biogenesis
+PA3803	AAG07190	gcpE	0.16	0.00000014	K03526	COG0821	Lipid metabolism
+PA3804	AAG07191	-	0.22	0.000074	K15539	COG1426	Function unknown
+PA3805	AAG07192	pilF	0.18	0.0000023	K02656	COG3063	Cell motility and secretion / Intracellular trafficking and secretion
+PA3807	AAG07194	-	0.16	0.0000003	K00940	COG0105	Nucleotide transport and metabolism
+PA3808	AAG07195	-	0.17	0.000000049	-	COG2975	Function unknown
+PA3809	AAG07196	fdx2	0.15	0.0000013	K04755	COG0633	Energy production and conversion
+PA3810	AAG07197	hscA	0.24	0.0000036	K04044	COG0443	Posttranslational modification, protein turnover, chaperones
+PA3812	AAG07199	iscA	0.17	0.000081	K13628	COG0316	Posttranslational modification, protein turnover, chaperones
+PA3816	AAG07203	cysE	0.19	0.000018	K00640	COG1045	Amino acid transport and metabolism
+PA3817	AAG07204	-	0.24	0.0023	K15396	COG0565	Translation, ribosomal structure and biogenesis
+PA3820	AAG07207	secF	0.09	2.7E-15	K03074	COG0341	Intracellular trafficking and secretion
+PA3821	AAG07208	secD	0.15	2.9E-10	K03072	COG0342	Intracellular trafficking and secretion
+PA3822	AAG07209	-	0.11	3.4E-09	K03210	COG1862	Intracellular trafficking and secretion
+PA3823	AAG07210	-	0.17	0.0000043	K00773	COG0343	Translation, ribosomal structure and biogenesis
+PA3827	AAG07214	-	0.14	0.000000081	K11720	COG0795	General function prediction only
+PA3834	AAG07221	valS	0.2	0.00000037	K01873	COG0525	Translation, ribosomal structure and biogenesis
+PA3837	AAG07224	-	0.06	0.00031	K05832	COG4120	General function prediction only
+PA3861	AAG07248	-	0.16	0.000000089	K03732	COG0513	DNA replication, recombination, and repair / Transcription / Translation, ribosomal structure and biogenesis
+PA3887	AAG07274	nhaP	0.12	0.0000082	K03316	COG0025	Inorganic ion transport and metabolism
+PA3903	AAG07290	prfC	0.17	0.000000085	K02837	COG4108	Translation, ribosomal structure and biogenesis
+PA3935	AAG07322	tauD	0.02	0.00004	K03119	COG2175	Secondary metabolites biosynthesis, transport, and catabolism
+PA3936	AAG07323	-	0.06	0.0022	K15552	COG0600	Inorganic ion transport and metabolism
+PA3940	AAG07327	-	0.07	0.0000027	K03530	COG0776	DNA replication, recombination, and repair
+PA3948	AAG07335	-	0.23	0.0034	K07690	COG2197	Signal transduction mechanisms / Transcription
+PA3967	AAG07354	-	0.11	0.000008	-	-	-
+PA3976	AAG07363	thiE	0.16	0.0011	K00788	COG0352	Coenzyme metabolism
+PA3982	AAG07369	-	0.09	1.5E-10	K07042	COG0319	General function prediction only
+PA3983	AAG07370	-	0.11	1.9E-09	K06189	COG4535	Inorganic ion transport and metabolism
+PA3984	AAG07371	-	0.22	0.0042	K03820	COG0815	Cell envelope biogenesis, outer membrane
+PA3987	AAG07374	leuS	0.23	0.0000064	K01869	COG0495	Translation, ribosomal structure and biogenesis
+PA3988	AAG07375	-	0.08	0.000000044	K03643	COG2980	Cell envelope biogenesis, outer membrane
+PA3996	AAG07383	-	0.16	0.00000014	K03644	COG0320	Coenzyme metabolism
+PA3997	AAG07384	lipB	0.12	6.2E-09	K03801	COG0321	Coenzyme metabolism
+PA3999	AAG07386	dacC	0.1	6.5E-14	K07258	COG1686	Cell envelope biogenesis, outer membrane
+PA4000	AAG07387	-	0.25	0.00063	K03642	COG0797	Cell envelope biogenesis, outer membrane
+PA4006	AAG07393	nadD	0.12	0.000000089	K00969	COG1057	Coenzyme metabolism
+PA4007	AAG07394	proA	0.17	0.00002	K00147	COG0014	Amino acid transport and metabolism
+PA4020	AAG07407	-	0.2	0.0015	K02558	COG0773	Cell envelope biogenesis, outer membrane
+PA4031	AAG07418	-	0.11	3.4E-09	K01507	COG0221	Energy production and conversion
+PA4044	AAG07431	-	0.25	0.00031	K01662	COG1154	Coenzyme metabolism / Lipid metabolism
+PA4050	AAG07437	pgpA	0.25	0.0016	K01095	COG1267	Lipid metabolism
+PA4052	AAG07439	nusB	0.21	0.0053	K03625	COG0781	Transcription
+PA4053	AAG07440	ribE	0.13	0.000016	K00794	COG0054	Coenzyme metabolism
+PA4056	AAG07443	ribD	0.25	0.0026	K11752	COG1985	Coenzyme metabolism
+PA4068	AAG07455	-	0.22	0.0037	K01784	COG0451	Cell envelope biogenesis, outer membrane / Carbohydrate transport and metabolism
+PA4069	AAG07456	-	0.23	0.0019	K00067	COG1091	Cell envelope biogenesis, outer membrane
+PA4079	AAG07466	-	0.2	0.006	-	COG1028	Secondary metabolites biosynthesis, transport, and catabolism / General function prediction only
+PA4232	AAG07620	-	0.15	0.00000083	K03111	COG0629	DNA replication, recombination, and repair
+PA4234	AAG07622	uvrA	0.22	0.000022	K03701	COG0178	DNA replication, recombination, and repair
+PA4235	AAG07623	bfrA	0.24	0.0017	K03594	COG2193	Inorganic ion transport and metabolism
+PA4237	AAG07625	rplQ	0.07	4.4E-19	K02879	COG0203	Translation, ribosomal structure and biogenesis
+PA4238	AAG07626	rpoA	0.06	9E-25	K03040	COG0202	Transcription
+PA4239	AAG07627	rpsD	0.08	9.9E-20	K02986	COG0522	Translation, ribosomal structure and biogenesis
+PA4240	AAG07628	rpsK	0.08	5.8E-17	K02948	COG0100	Translation, ribosomal structure and biogenesis
+PA4241	AAG07629	rpsM	0.06	8.1E-24	K02952	COG0099	Translation, ribosomal structure and biogenesis
+PA4242	AAG07630	rpmJ	0.06	3.5E-16	K02919	COG0257	Translation, ribosomal structure and biogenesis
+PA4243	AAG07631	secY	0.07	3.1E-21	K03076	COG0201	Intracellular trafficking and secretion
+PA4244	AAG07632	rplO	0.1	1.8E-15	K02876	COG0200	Translation, ribosomal structure and biogenesis
+PA4245	AAG07633	rpmD	0.06	4.5E-21	K02907	COG1841	Translation, ribosomal structure and biogenesis
+PA4246	AAG07634	rpsE	0.07	1.2E-19	K02988	COG0098	Translation, ribosomal structure and biogenesis
+PA4247	AAG07635	rplR	0.06	7.9E-22	K02881	COG0256	Translation, ribosomal structure and biogenesis
+PA4248	AAG07636	rplF	0.1	7.4E-18	K02933	COG0097	Translation, ribosomal structure and biogenesis
+PA4249	AAG07637	rpsH	0.06	7.4E-24	K02994	COG0096	Translation, ribosomal structure and biogenesis
+PA4250	AAG07638	rpsN	0.1	1.4E-15	K02954	COG0199	Translation, ribosomal structure and biogenesis
+PA4251	AAG07639	rplE	0.08	1.4E-17	K02931	COG0094	Translation, ribosomal structure and biogenesis
+PA4252	AAG07640	rplX	0.06	2.7E-23	K02895	COG0198	Translation, ribosomal structure and biogenesis
+PA4253	AAG07641	rplN	0.1	4.4E-15	K02874	COG0093	Translation, ribosomal structure and biogenesis
+PA4254	AAG07642	rpsQ	0.06	1.5E-21	K02961	COG0186	Translation, ribosomal structure and biogenesis
+PA4255	AAG07643	rpmC	0.14	0.000047	K02904	COG0255	Translation, ribosomal structure and biogenesis
+PA4256	AAG07644	rplP	0.1	1.7E-14	K02878	COG0197	Translation, ribosomal structure and biogenesis
+PA4257	AAG07645	rpsC	0.07	1.5E-12	K02982	COG0092	Translation, ribosomal structure and biogenesis
+PA4258	AAG07646	rplV	0.1	3.3E-14	K02890	COG0091	Translation, ribosomal structure and biogenesis
+PA4259	AAG07647	rpsS	0.09	1.2E-15	K02965	COG0185	Translation, ribosomal structure and biogenesis
+PA4260	AAG07648	rplB	0.13	1.4E-12	K02886	COG0090	Translation, ribosomal structure and biogenesis
+PA4261	AAG07649	rplW	0.06	1.4E-23	K02892	COG0089	Translation, ribosomal structure and biogenesis
+PA4262	AAG07650	rplD	0.06	1.1E-11	K02926	COG0088	Translation, ribosomal structure and biogenesis
+PA4263	AAG07651	rplC	0.07	1.2E-12	K02906	COG0087	Translation, ribosomal structure and biogenesis
+PA4264	AAG07652	rpsJ	0.08	1.4E-21	K02946	COG0051	Translation, ribosomal structure and biogenesis
+PA4265	AAG07653	tufA	0.08	1.7E-21	K02358	COG0050	Translation, ribosomal structure and biogenesis
+PA4266	AAG07654	-	0.06	1.2E-25	K02355	COG0480	Translation, ribosomal structure and biogenesis
+PA4267	AAG07655	rpsG	0.05	2.2E-14	K02992	COG0049	Translation, ribosomal structure and biogenesis
+PA4268	AAG07656	rpsL	0.06	3.2E-25	K02950	COG0048	Translation, ribosomal structure and biogenesis
+PA4269	AAG07657	rpoC	0.17	3E-10	K03046	COG0086	Transcription
+PA4270	AAG07658	rpoB	0.15	3.2E-12	K03043	COG0085	Transcription
+PA4270.1	PA4270.1-1	-	0.17	0.0039	-	-	-
+PA4271	AAG07659	rplL	0.05	6.9E-25	K02935	COG0222	Translation, ribosomal structure and biogenesis
+PA4272	AAG07660	rplJ	0.05	2.9E-25	K02864	COG0244	Translation, ribosomal structure and biogenesis
+PA4273	AAG07661	rplA	0.08	9.2E-19	K02863	COG0081	Translation, ribosomal structure and biogenesis
+PA4274	AAG07662	rplK	0.08	8.6E-18	K02867	COG0080	Translation, ribosomal structure and biogenesis
+PA4275	AAG07663	nusG	0.07	6E-15	K02601	COG0250	Transcription
+PA4276	AAG07664	secE	0.09	7.7E-16	K03073	COG0690	Intracellular trafficking and secretion
+PA4277	AAG07665	tufB	0.07	1.2E-19	K02358	COG0050	Translation, ribosomal structure and biogenesis
+PA4292	AAG07680	-	0.23	0.00028	K16322	COG0306	Inorganic ion transport and metabolism
+PA4314	AAG07702	-	0.17	0.000049	K01433	COG0788	Nucleotide transport and metabolism
+PA4319	AAG07707	-	0.14	0.00005	-	COG1300	Function unknown
+PA4320	AAG07708	-	0.06	2.6E-16	-	-	-
+PA4321	AAG07709	-	0.18	0.00051	-	-	-
+PA4322	AAG07710	-	0.12	0.00029	K03924	COG0714	General function prediction only
+PA4323	AAG07711	-	0.25	0.00036	-	COG1721	General function prediction only
+PA4324	AAG07712	-	0.14	0.0047	-	-	-
+PA4332	AAG07720	-	0.18	0.0043	-	COG2199	Signal    transduction mechanisms
+PA4333	AAG07721	-	0.19	0.00000048	K01676	COG1951	Energy production and conversion
+PA4348	AAG07736	-	0.18	0.000000033	-	COG0426	Energy production and conversion
+PA4366	AAG07754	sodB	0.23	0.000000091	K04564	COG0605	Inorganic ion transport and metabolism
+PA4395	AAG07783	-	0.11	4.7E-11	K09767	COG1666	Function unknown
+PA4403	AAG07791	secA	0.18	2.5E-09	K03070	COG0653	Intracellular trafficking and secretion
+PA4406	AAG07794	lpxC	0.17	2.2E-10	K02535	COG0774	Cell envelope biogenesis, outer membrane
+PA4406.1	PA4406.1-1	-	0.05	9.2E-13	-	-	-
+PA4408	AAG07796	ftsA	0.21	0.00000042	K03590	COG0849	Cell division and chromosome partitioning
+PA4411	AAG07799	murC	0.23	0.000074	K01924	COG0773	Cell envelope biogenesis, outer membrane
+PA4414	AAG07802	murD	0.25	0.00012	K01925	COG0771	Cell envelope biogenesis, outer membrane
+PA4415	AAG07803	mraY	0.2	0.000013	K01000	COG0472	Cell envelope biogenesis, outer membrane
+PA4421	AAG07809	-	0.18	0.00000012	K03925	COG2001	Function unknown
+PA4425	AAG07813	-	0.21	0.0097	K03271	COG0279	Carbohydrate transport and metabolism
+PA4426	AAG07814	-	0.16	0.00003	-	COG2823	General function prediction only
+PA4427	AAG07815	sspB	0.18	0.00016	K03600	COG2969	General function prediction only
+PA4429	AAG07817	-	0.14	1.1E-10	K00413	COG2857	Energy production and conversion
+PA4430	AAG07818	-	0.22	0.00000082	K00412	COG1290	Energy production and conversion
+PA4431	AAG07819	-	0.11	3.3E-14	K00411	COG0723	Energy production and conversion
+PA4432	AAG07820	rpsI	0.11	5.2E-13	K02996	COG0103	Translation, ribosomal structure and biogenesis
+PA4433	AAG07821	rplM	0.08	0.0000029	K02871	COG0102	Translation, ribosomal structure and biogenesis
+PA4438	AAG07826	-	0.15	0.00042	K06916	COG1485	General function prediction only
+PA4442	AAG07830	cysN	0.07	0.000034	K00955	COG2895	Inorganic ion transport and metabolism
+PA4447	AAG07835	-	0.17	0.0005	K00817	COG0079	Amino acid transport and metabolism
+PA4448	AAG07836	hisD	0.2	0.00014	K00013	COG0141	Amino acid transport and metabolism
+PA4449	AAG07837	hisG	0.06	0.000000025	K00765	COG0040	Amino acid transport and metabolism
+PA4450	AAG07838	murA	0.15	0.000000028	K00790	COG0766	Cell envelope biogenesis, outer membrane
+PA4451	AAG07839	-	0.12	0.00066	-	COG5007	Transcription
+PA4454	AAG07842	-	0.11	6.6E-10	K02067	COG1463	Secondary metabolites biosynthesis, transport, and catabolism
+PA4455	AAG07843	-	0.16	0.0000016	K02066	COG0767	Secondary metabolites biosynthesis, transport, and catabolism
+PA4458	AAG07846	-	0.15	0.00000024	K03270	COG1778	General function prediction only
+PA4459	AAG07847	-	0.17	0.00000042	K11719	COG3117	Function unknown
+PA4461	AAG07849	-	0.22	0.0000013	K06861	COG1137	General function prediction only
+PA4464	AAG07852	ptsN	0.2	0.000073	K02806	COG1762	Carbohydrate transport and metabolism / Signal transduction mechanisms
+PA4465	AAG07853	-	0.23	0.000031	K06958	COG1660	General function prediction only
+PA4466	AAG07854	-	0.13	0.0000042	K11189	COG1925	Carbohydrate transport and metabolism
+PA4473	AAG07861	-	0.17	0.00081	K09889	COG3028	Function unknown
+PA4477	AAG07865	cafA	0.21	0.000022	K08301	COG1530	Translation, ribosomal structure and biogenesis
+PA4479	AAG07867	mreD	0.13	0.00035	K03571	COG2891	Cell envelope biogenesis, outer membrane
+PA4480	AAG07868	mreC	0.16	0.000014	K03570	COG1792	Cell envelope biogenesis, outer membrane
+PA4483	AAG07871	gatA	0.21	0.00014	K02433	COG0154	Translation, ribosomal structure and biogenesis
+PA4484	AAG07872	gatB	0.17	0.00000033	K02434	COG0064	Translation, ribosomal structure and biogenesis
+PA4525	AAG07913	pilA	0.13	0.0000047	K02650	COG4969	Cell motility and secretion / Intracellular trafficking and secretion
+PA4538	AAG07926	-	0.25	0.0057	K03885	COG1252	Energy production and conversion
+PA4544	AAG07932	rluD	0.22	0.003	K06180	COG0564	Translation, ribosomal structure and biogenesis
+PA4545	AAG07933	comL	0.22	0.00036	K05807	COG4105	General function prediction only
+PA4557	AAG07945	lytB	0.2	0.000041	K03527	COG0761	Lipid metabolism
+PA4558	AAG07946	-	0.23	0.0079	K03774	COG1047	Posttranslational modification, protein turnover, chaperones
+PA4559	AAG07947	lspA	0.1	0.0000029	K03101	COG0597	Cell envelope biogenesis, outer membrane / Intracellular trafficking and secretion
+PA4560	AAG07948	ileS	0.17	1.6E-09	K01870	COG0060	Translation, ribosomal structure and biogenesis
+PA4563	AAG07951	rpsT	0.11	0.00000044	K02968	COG0268	Translation, ribosomal structure and biogenesis
+PA4567	AAG07955	rpmA	0.09	6.6E-17	K02899	COG0211	Translation, ribosomal structure and biogenesis
+PA4568	AAG07956	rplU	0.09	5.1E-17	K02888	COG0261	Translation, ribosomal structure and biogenesis
+PA4569	AAG07957	ispB	0.19	0.0000047	K02523	COG0142	Coenzyme metabolism
+PA4571	AAG07959	-	0.23	0.0042	-	COG3258	Energy production and conversion
+PA4572	AAG07960	fklB	0.15	0.000021	K03773	COG0545	Posttranslational modification, protein turnover, chaperones
+PA4602	AAG07990	-	0.18	0.0000053	K00600	COG0112	Amino acid transport and metabolism
+PA4611	AAG07999	-	0.19	0.00000012	K09794	COG2841	Function unknown
+PA4631	AAG08019	-	0.12	0.00068	-	COG0451	Cell envelope biogenesis, outer membrane / Carbohydrate transport and metabolism
+PA4632	AAG08020	-	0.2	0.0007	-	COG0501	Posttranslational modification, protein turnover, chaperones
+PA4640	AAG08028	mqoB	0.19	0.00092	K00116	COG0579	General function prediction only
+PA4645	AAG08032	-	0.14	0.0053	K00760	COG0634	Nucleotide transport and metabolism
+PA4647	AAG08034	uraA	0.09	0.00000036	K02824	COG2233	Nucleotide transport and metabolism
+PA4662	AAG08049	murI	0.2	0.0031	K01776	COG0796	Cell envelope biogenesis, outer membrane
+PA4664	AAG08051	hemK	0.14	0.00063	K02493	COG2890	Translation, ribosomal structure and biogenesis
+PA4667	AAG08054	-	0.22	0.00023	-	COG5010	Intracellular trafficking and secretion
+PA4669	AAG08056	-	0.08	2.4E-16	K00919	COG1947	Lipid metabolism
+PA4670	AAG08057	-	0.09	0.000022	K00948	COG0462	Nucleotide transport and metabolism / Amino acid transport and metabolism
+PA4671	AAG08058	-	0.09	2.1E-17	K02897	COG1825	Translation, ribosomal structure and biogenesis
+PA4672	AAG08059	-	0.06	1.8E-18	K01056	COG0193	Translation, ribosomal structure and biogenesis
+PA4683	AAG08070	-	0.14	0.00077	-	-	-
+PA4694	AAG08080	ilvC	0.03	9.2E-16	K00053	COG0059	Amino acid transport and metabolism / Coenzyme metabolism
+PA4695	AAG08081	ilvH	0.04	5.2E-25	K01653	COG0440	Amino acid transport and metabolism
+PA4696	AAG08082	ilvI	0.16	7.2E-09	K01652	COG0028	acetolactate synthase, pyruvate dehydrogenase (cytochrome), glyoxylate carboligase, phosphonopyruvate decarboxylase
+PA4700	AAG08086	mrcB	0.2	0.000013	K05365	COG0744	Cell envelope biogenesis, outer membrane
+PA4723	AAG08109	dksA	0.08	3.4E-09	K06204	COG1734	Signal transduction mechanisms
+PA4726.11	PA4726.11-1	-	0.23	0.00084	-	-	-
+PA4727	AAG08113	pcnB	0.25	0.00051	K00970	COG0617	Translation, ribosomal structure and biogenesis
+PA4740	AAG08126	-	0.16	3.2E-10	K00962	COG1185	Translation, ribosomal structure and biogenesis
+PA4741	AAG08127	rpsO	0.04	8.2E-28	K02956	COG0184	Translation, ribosomal structure and biogenesis
+PA4742	AAG08128	truB	0.09	2.5E-12	K03177	COG0130	Translation, ribosomal structure and biogenesis
+PA4743	AAG08129	rbfA	0.15	0.0006	K02834	COG0858	Translation, ribosomal structure and biogenesis
+PA4744	AAG08130	infB	0.12	3.3E-13	K02519	COG0532	Translation, ribosomal structure and biogenesis
+PA4745	AAG08131	nusA	0.1	1.3E-15	K02600	COG0195	Transcription
+PA4746	AAG08132	-	0.2	0.0000015	K09748	COG0779	Function unknown
+PA4747	AAG08133	secG	0.06	7.7E-23	K03075	COG1314	Intracellular trafficking and secretion
+PA4748	AAG08134	tpiA	0.09	0.000026	K01803	COG0149	Carbohydrate transport and metabolism
+PA4753	AAG08139	-	0.18	0.000021	K07574	COG1534	Translation, ribosomal structure and biogenesis
+PA4754	AAG08140	-	0.08	2.1E-10	-	-	-
+PA4755	AAG08141	greA	0.17	0.0000038	K03624	COG0782	Function unknown
+PA4756	AAG08142	carB	0.09	2.2E-16	K01955	COG0458	Amino acid transport and metabolism / Nucleotide transport and metabolism
+PA4757	AAG08143	-	0.25	0.00028	K11250	COG1280	Amino acid transport and metabolism
+PA4764	AAG08150	-	0.18	0.00000014	K03711	COG0735	Inorganic ion transport and metabolism
+PA4765	AAG08151	omlA	0.21	0.000056	K06186	COG2913	Cell envelope biogenesis, outer membrane
+PA4767	AAG08153	-	0.14	0.002	-	COG2867	Lipid metabolism
+PA4768	AAG08154	smpB	0.13	0.00000046	K03664	COG0691	Posttranslational modification, protein turnover, chaperones
+PA4843	AAG08228	-	0.23	0.0000049	-	COG3706	Signal transduction mechanisms
+PA4846	AAG08231	-	0.15	0.0000093	K03786	COG0757	Amino acid transport and metabolism
+PA4847	AAG08232	accB	0.03	5.8E-14	K02160	COG0511	Lipid metabolism
+PA4848	AAG08233	accC	0.08	1.4E-10	K01961	COG0439	Lipid metabolism
+PA4852	AAG08237	-	0.23	0.0000031	K05540	COG0042	Translation, ribosomal structure and biogenesis
+PA4853	AAG08238	-	0.14	0.0014	K03557	COG2901	Transcription / DNA replication, recombination, and repair
+PA4854	AAG08239	purH	0.15	0.000012	K00602	COG0138	Nucleotide transport and metabolism
+PA4855	AAG08240	purD	0.17	0.00013	K01945	COG0151	Nucleotide transport and metabolism
+PA4928	AAG08313	-	0.2	0.000023	-	COG1032	Energy production and conversion
+PA4932	AAG08317	rplI	0.1	4.4E-16	K02939	COG0359	Translation, ribosomal structure and biogenesis
+PA4933	AAG08318	-	0.05	1E-22	-	-	-
+PA4934	AAG08319	rpsR	0.16	1.9E-09	K02963	COG0238	Translation, ribosomal structure and biogenesis
+PA4935	AAG08320	rpsF	0.08	4.4E-19	K02990	COG0360	Translation, ribosomal structure and biogenesis
+PA4938	AAG08323	purA	0.12	4.2E-12	K01939	COG0104	Nucleotide transport and metabolism
+PA4939	AAG08324	-	0.18	0.00000048	K02502	COG3705	Amino acid transport and metabolism
+PA4940	AAG08325	-	0.16	0.000033	K09937	COG3242	Function unknown
+PA4941	AAG08326	hflC	0.16	0.000000019	K04087	COG0330	Posttranslational modification, protein turnover, chaperones
+PA4942	AAG08327	hflK	0.24	0.000014	K04088	COG0330	Posttranslational modification, protein turnover, chaperones
+PA4946	AAG08331	mutL	0.2	0.0000016	K03572	COG0323	DNA replication, recombination, and repair
+PA4952	AAG08337	-	0.2	0.0011	K06949	COG1162	General function prediction only
+PA4959	AAG08344	fimX	0.22	0.0000058	-	COG2200	Signal    transduction mechanisms
+PA4960	AAG08345	-	0.23	0.000054	K01079	COG0560	Amino acid transport and metabolism
+PA4961	AAG08346	-	0.22	0.00047	K07186	COG3726	General function prediction only
+PA4964	AAG08349	parC	0.22	0.000035	K02621	COG0188	DNA replication, recombination, and repair
+PA4973	AAG08358	thiC	0.25	0.00029	K03147	COG0422	Coenzyme metabolism
+PA4974	AAG08359	-	0.17	0.000038	K12340	COG1538	Cell envelope biogenesis, outer membrane / Intracellular trafficking and secretion
+PA4992	AAG08377	-	0.17	0.0033	-	COG0667	Energy production and conversion
+PA4999	AAG08384	waaL	0.22	0.0011	-	COG3307	Cell envelope biogenesis, outer membrane
+PA5001	AAG08386	-	0.12	2.3E-10	-	COG0438	Cell envelope biogenesis, outer membrane
+PA5002	AAG08387	-	0.16	0.000057	-	-	-
+PA5003	AAG08388	-	0.15	0.00000047	-	-	-
+PA5004	AAG08389	-	0.24	0.00015	-	COG0438	Cell envelope biogenesis, outer membrane
+PA5005	AAG08390	-	0.17	0.000000063	K00612	COG2192	Posttranslational modification, protein turnover, chaperones
+PA5006	AAG08391	-	0.25	0.0023	-	-	-
+PA5009	AAG08394	waaP	0.15	0.00000066	K02848	-	-
+PA5013	AAG08398	ilvE	0.15	0.000019	K00826	COG0115	Amino acid transport and metabolism / Coenzyme metabolism
+PA5015	AAG08400	aceE	0.2	0.000000022	K00163	COG2609	Energy production and conversion
+PA5016	AAG08401	aceF	0.09	1.2E-16	K00627	COG0508	Energy production and conversion
+PA5035	AAG08420	gltD	0.08	1.4E-14	K00266	COG0493	Amino acid transport and metabolism / General function prediction only
+PA5036	AAG08421	gltB	0.15	1.2E-11	K00265	COG0069	Amino acid transport and metabolism
+PA5046	AAG08431	-	0.09	5.9E-16	K00029	COG0281	Energy production and conversion
+PA5049	AAG08434	rpmE	0.13	4.8E-12	K02909	COG0254	Translation, ribosomal structure and biogenesis
+PA5063	AAG08448	ubiE	0.24	0.0014	K03183	COG2226	Coenzyme metabolism
+PA5066	AAG08451	hisI	0.13	9.3E-11	K01496	COG0139	Amino acid transport and metabolism
+PA5067	AAG08452	hisE	0.16	0.00004	K01523	COG0140	Amino acid transport and metabolism
+PA5068	AAG08453	tatA	0.12	5.5E-11	K03116	COG1826	Intracellular trafficking and secretion
+PA5069	AAG08454	tatB	0.23	0.0061	K03117	COG1826	Intracellular trafficking and secretion
+PA5070	AAG08455	tatC	0.23	0.00083	K03118	COG0805	Intracellular trafficking and secretion
+PA5074	AAG08459	-	0.1	0.0028	K02028	COG1126	Amino acid transport and metabolism
+PA5076	AAG08461	-	0.11	0.000000025	K02030	COG0834	Amino acid transport and metabolism / Signal transduction mechanisms
+PA5110	AAG08495	-	0.22	0.000033	K03841	COG0158	Carbohydrate transport and metabolism
+PA5112	AAG08497	estA	0.16	0.0000017	K12686	COG3240	Lipid metabolism / General function prediction only
+PA5118	AAG08503	thiI	0.21	0.00014	K03151	COG0301	Coenzyme metabolism
+PA5119	AAG08504	glnA	0.04	2.1E-19	K01915	COG0174	Amino acid transport and metabolism
+PA5125	AAG08510	ntrC	0.04	0.000045	K07712	COG2204	Signal transduction mechanisms
+PA5128	AAG08513	secB	0.16	0.0000037	K03071	COG1952	Intracellular trafficking and secretion
+PA5130	AAG08515	-	0.14	0.0013	-	COG0607	Inorganic ion transport and metabolism
+PA5137	AAG08522	-	0.07	0.0000003	K02030	COG0834	Amino acid transport and metabolism / Signal transduction mechanisms
+PA5138	AAG08523	-	0.23	0.0093	-	COG0834	Amino acid transport and metabolism / Signal transduction mechanisms
+PA5140	AAG08525	-	0.1	0.0000011	K02500	COG0107	Amino acid transport and metabolism
+PA5141	AAG08526	hisA	0.09	2.8E-09	K01814	COG0106	Amino acid transport and metabolism
+PA5143	AAG08528	hisB	0.18	0.0000028	K01693	COG0131	Amino acid transport and metabolism
+PA5148	AAG08533	-	0.19	0.0005	-	COG2924	Function unknown
+PA5153	AAG08538	-	0.11	0.00000058	K02030	COG0834	Amino acid transport and metabolism / Signal transduction mechanisms
+PA5161	AAG08546	rmlB	0.17	0.00000017	K01710	COG1088	Cell envelope biogenesis, outer membrane
+PA5162	AAG08547	rmlD	0.22	0.00047	K00067	COG1091	Cell envelope biogenesis, outer membrane
+PA5167	AAG08552	-	0.17	0.00000011	K11688	COG1638	Carbohydrate transport and metabolism
+PA5168	AAG08553	-	0.12	0.00014	K11689	COG3090	Carbohydrate transport and metabolism
+PA5169	AAG08554	-	0.06	8.1E-15	K11690	COG1593	Carbohydrate transport and metabolism
+PA5174	AAG08559	-	0.05	7.7E-21	-	COG0304	Lipid metabolism / Secondary metabolites biosynthesis, transport, and catabolism
+PA5192	AAG08577	pckA	0.12	3.6E-10	K01610	COG1866	Energy production and conversion
+PA5194	AAG08579	-	0.25	0.001	-	COG0671	Lipid metabolism
+PA5202	AAG08587	-	0.09	0.00000015	K02614	COG2050	Secondary metabolites biosynthesis,    transport, and catabolism
+PA5208	AAG08593	-	0.21	0.0000041	K07220	COG1392	Inorganic ion transport and metabolism
+PA5214	AAG08599	-	0.17	0.0031	K02437	COG0509	Amino acid transport and metabolism
+PA5215	AAG08600	-	0.16	0.00000079	K00605	COG0404	Amino acid transport and metabolism
+PA5226	AAG08611	-	0.13	0.00071	-	-	-
+PA5237	AAG08622	-	0.23	0.00046	K03182	COG0043	Coenzyme metabolism
+PA5239	AAG08624	-	0.14	1.4E-11	K03628	COG1158	Transcription
+PA5240	AAG08625	trxA	0.09	2.3E-18	K03671	COG3118	Posttranslational modification, protein turnover, chaperones
+PA5241	AAG08626	-	0.2	0.000028	K01524	COG0248	Nucleotide transport and metabolism / Inorganic ion transport and metabolism
+PA5244	AAG08629	-	0.14	0.000088	-	COG0586	Function unknown
+PA5258	AAG08643	-	0.23	0.0000034	K02496	COG2959	Coenzyme metabolism
+PA5260	AAG08645	hemC	0.21	0.000041	K01749	COG0181	Coenzyme metabolism
+PA5269	AAG08654	-	0.15	0.008	-	-	-
+PA5274	AAG08659	-	0.21	0.000011	K06140	COG0782	Function unknown
+PA5277	AAG08662	lysA	0.22	0.000062	K01586	COG0019	Amino acid transport and metabolism
+PA5278	AAG08663	dapF	0.17	0.00023	K01778	COG0253	Amino acid transport and metabolism
+PA5279	AAG08664	-	0.14	0.00021	K09921	COG3159	Function unknown
+PA5287	AAG08672	amtB	0.25	0.00034	K03320	COG0004	Inorganic ion transport and metabolism
+PA5291	AAG08676	-	0.21	0.0000093	K02168	COG1292	Cell envelope biogenesis, outer membrane
+PA5296	AAG08681	-	0.22	0.00009	K03656	COG0210	DNA replication, recombination, and repair
+PA5300	AAG08685	cycB	0.08	0.00000031	-	COG3245	Energy production and conversion
+PA5315	AAG08700	rpmG	0.13	5.5E-11	K02913	COG0267	Translation, ribosomal structure and biogenesis
+PA5316	AAG08701	rpmB	0.1	2.6E-13	K02902	COG0227	Translation, ribosomal structure and biogenesis
+PA5333	AAG08718	-	0.25	0.0096	K09940	COG3296	Function unknown
+PA5337	AAG08722	rpoZ	0.2	0.000000001	K03060	COG1758	Transcription
+PA5338	AAG08723	spoT	0.22	0.00000035	K01139	COG0317	Signal transduction mechanisms / Transcription
+PA5339	AAG08724	-	0.2	0.000033	K07567	COG0251	Translation, ribosomal structure and biogenesis
+PA5340	AAG08725	-	0.18	0.000022	-	-	-
+PA5345	AAG08730	recG	0.15	0.0000063	K03655	COG1200	DNA replication, recombination, and repair / Transcription
+PA5347	AAG08732	-	0.21	0.0028	-	-	-
+PA5348	AAG08733	-	0.04	1.2E-19	K05787	COG0776	DNA replication, recombination, and repair
+PA5349	AAG08734	-	0.18	0.0025	K05297	COG1251	Energy production and conversion
+PA5351	AAG08736	-	0.06	0.0007	-	COG1773	Energy production and conversion
+PA5362	AAG08747	-	0.17	0.000045	-	COG1253	General function prediction only
+PA5364	AAG08749	-	0.19	0.0000027	-	COG2204	Signal transduction mechanisms
+PA5406	AAG08791	-	0.14	0.004	-	-	-
+PA5426	AAG08811	purE	0.08	0.0000024	K01588	COG0041	Nucleotide transport and metabolism
+PA5435	AAG08820	-	0.23	0.000034	K01960	COG5016	Energy production and conversion
+PA5436	AAG08821	-	0.21	0.00029	K01959	COG0439	Lipid metabolism
+PA5461	AAG08846	-	0.17	0.000054	-	-	-
+PA5478	AAG08863	-	0.13	0.0000047	-	COG2715	General function prediction only
+PA5479	AAG08864	gltP	0.11	3.8E-12	K11102	COG1301	Energy production and conversion
+PA5490	AAG08875	-	0.07	5.6E-09	-	COG2863	Energy production and conversion
+PA5491	AAG08876	-	0.16	0.00000046	-	COG3245	Energy production and conversion
+PA5503	AAG08888	-	0.18	0.00083	K02071	COG1135	Inorganic ion transport and metabolism
+PA5504	AAG08889	-	0.11	0.000017	K02072	COG2011	Inorganic ion transport and metabolism
+PA5505	AAG08890	-	0.1	0.000000026	K02073	COG1464	Inorganic ion transport and metabolism
+PA5527	AAG08912	-	0.13	0.006	-	-	-
+PA5530	AAG08915	-	0.2	0.0000051	K03761	COG2814	Carbohydrate transport and metabolism
+PA5553	AAG08938	atpC	0.08	0.000000025	K02114	COG0355	Energy production and conversion
+PA5554	AAG08939	atpD	0.11	5.8E-15	K02112	COG0055	Energy production and conversion
+PA5555	AAG08940	atpG	0.06	3.5E-23	K02115	COG0224	Energy production and conversion
+PA5556	AAG08941	atpA	0.13	1.2E-12	K02111	COG0056	Energy production and conversion
+PA5557	AAG08942	atpH	0.05	5E-26	K02113	COG0712	Energy production and conversion
+PA5558	AAG08943	atpF	0.06	1.2E-24	K02109	COG0711	Energy production and conversion
+PA5559	AAG08944	atpE	0.05	2.7E-28	K02110	-	-
+PA5560	AAG08945	atpB	0.08	4.7E-19	K02108	COG0356	Energy production and conversion
+PA5561	AAG08946	atpI	0.12	2.3E-12	K02116	COG3312	Energy production and conversion
+PA5562	AAG08947	-	0.15	0.000000049	K03497	COG1475	Transcription
+PA5563	AAG08948	-	0.15	0.00000058	K03496	COG1192	Cell division and chromosome partitioning
+PA5565	AAG08950	gidA	0.24	0.000012	K03495	COG0445	Cell cycle control, cell division, chromosome partitioning
+PA5568	AAG08953	-	0.12	3.6E-13	K03217	COG0706	Intracellular trafficking and secretion
+PA5569	AAG08954	rnpA	0.13	2E-10	K03536	COG0594	Translation, ribosomal structure and biogenesis
