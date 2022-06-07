@@ -1,10 +1,13 @@
 import re
 import sys
+import glob
+import pathlib
+from pathlib import Path
 from Azithromycin_Serum.Upregulated_NonStatistical_DEGs import NonStatistical_DEG
 
 class DEG_NonDEG_Module:
 	def DEG_NonDEG_Count_Module(self, infile1, infile2, infile3, infile4, infile5, out_file):
-		file_list = ['PAO1_DEGMod_Enrichment.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'AZM_SERUM_BiologicalReplicate.txt', 'AZM_SERUM_Paper.txt', 'PAO1_AMR_Annotations.tsv', 'All_Transcripts_In_DEGenrichedModules.txt', 'UpDownRegulatedNonDEGs_In_DEGenrichedModules.txt']
+		file_list = ['Output_Files/PAO1_DEGMod_Enrichment.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/AZM_SERUM_BiologicalReplicate.txt', 'Input_Files/AZM_SERUM_Paper.txt', 'Input_Files/PAO1_AMR_Annotations.tsv', 'Output_Files/All_Transcripts_In_DEGenrichedModules.txt', 'Output_Files/UpDownRegulatedNonDEGs_In_DEGenrichedModules.txt']
 		NonStatistical_DEG().UpDown_NonStatistical_DEGs(file_list[0], file_list[1], file_list[2], file_list[3], file_list[4], file_list[5], file_list[6])
 
 		file1 = open(infile1,'r')
@@ -65,7 +68,7 @@ class DEG_NonDEG_Module:
 
 		outfile = open(out_file,'w')
 		counter=0;
-		outfile.write('Module'+'\t'+'DEG_Count'+'\t'+'LDEG_Count'+'\t'+'Total_DEG_Count'+'\t'+'Module_Gene_Count'+'\t'+'DEG_Percent_In_Module'+'\t'+'LDEG_Percent_In_Module'+'\n')
+		outfile.write('Module'+'\t'+'DEG_Count'+'\t'+'LDEG_Count'+'\t'+'Total_DEG_Count'+'\t'+'Module_Gene_Count'+'\t'+'DEG+LDEG_Percent_In_Module'+'\t'+'DEG_Percent_In_Module'+'\n')
 		for i in range(len(transcripts)):
 			transcript_deg_count = 0; transcript_nondeg_count = 0; non_author_deg = 0;
 			for j in range(len(transcripts[i])):
@@ -89,8 +92,15 @@ class DEG_NonDEG_Module:
 			print(module[i], transcript_deg_count, transcript_nondeg_count, transcript_count, module_length[i], str(float(transcript_count/int(module_length[i]))))
 			outfile.write(str(module[i])+'\t'+str(transcript_deg_count)+'\t'+str(transcript_nondeg_count)+'\t'+str(transcript_count)+'\t'+str(module_length[i])+'\t'+str(float(transcript_count/int(module_length[i])))+'\t'+str(float(transcript_deg_count/int(module_length[i])))+'\n') # LDEG_Percent_In_Module: These are the DEGs that show Fold change > 1.5 or Fold change < -1.5, and Pvalue <= 0.05.
 
+		output_files = glob.glob('Output_Files/*'); print(output_files);
+		keep_files = ['Output_Files/PAO1_DEGMod_Enrichment.txt', 'Output_Files/UpDownRegulatedNonDEGs_In_DEGenrichedModules.txt', 'Output_Files/DEG_NonDEG_Module_Pathway.txt']
+		for f in output_files:
+			if (f not in keep_files):
+				path = pathlib.Path(f)
+				path.unlink()
 
-DEG_NonDEG_Module().DEG_NonDEG_Count_Module('WGCNA_PAO1_Modules_Clusters.txt', 'AZM_SERUM_BiologicalReplicate.txt', 'PAO1_AMR_Annotations.tsv', 'AZM_SERUM_Paper.txt', 'UpDownRegulatedNonDEGs_In_DEGenrichedModules.txt', 'DEG_NonDEG_Module_Pathway.txt')
+
+DEG_NonDEG_Module().DEG_NonDEG_Count_Module('Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/AZM_SERUM_BiologicalReplicate.txt', 'Input_Files/PAO1_AMR_Annotations.tsv', 'Input_Files/AZM_SERUM_Paper.txt', 'Output_Files/UpDownRegulatedNonDEGs_In_DEGenrichedModules.txt', 'Output_Files/DEG_NonDEG_Module_Pathway.txt')
 
 
 

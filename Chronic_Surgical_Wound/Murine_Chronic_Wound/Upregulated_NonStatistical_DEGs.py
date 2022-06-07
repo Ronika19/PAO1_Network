@@ -3,7 +3,7 @@ from .DEG_Module_Enrichment import DEG_Enrichment
 
 class NonStatistical_DEG:
 	def UpDown_NonStatistical_DEGs(self, infile1, infile2, infile3, infile4, infile5, infile6, out_file1, out_file2, out_file3):
-		DEG_Enrichment().Enrichment('PAO1_Nodes.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'PAO1_DEG_Modules.txt', 'PAO1_DEGMod_Enrichment.txt')
+		DEG_Enrichment().Enrichment('Input_Files/PAO1_Nodes.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEGMod_Enrichment.txt')
 		
 		file1 = open(infile1,'r')
 		for i in range(2):
@@ -119,6 +119,6 @@ class NonStatistical_DEG:
 		outfile1.close(); outfile2.close(); outfile3.close();
 		
 if __name__ == "__main__":
-	NonStatistical_DEG().UpDown_NonStatistical_DEGs('PAO1_DEGMod_Enrichment.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'Murine_Dataset_DownRegulatedDEGs.txt', 'Murine_Dataset_UpRegulatedDEGs.txt', 'pgen.1004518.s005.txt', 'PAO1_Annotations.tsv', 'All_Transcripts_In_DEGenrichedModules.txt', 'UpRegulatedNonDEGs_In_DEGenrichedModules.txt', 'DownRegulatedNonDEGs_In_DEGenrichedModules.txt')		
+	NonStatistical_DEG().UpDown_NonStatistical_DEGs('Output_Files/PAO1_DEGMod_Enrichment.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Input_Files/Murine_Dataset_DownRegulatedDEGs.txt', 'Input_Files/Murine_Dataset_UpRegulatedDEGs.txt', 'Input_Files/pgen.1004518.s005.txt', 'Input_Files/PAO1_Annotations.tsv', 'Output_Files/All_Transcripts_In_DEGenrichedModules.txt', 'Output_Files/UpRegulatedNonDEGs_In_DEGenrichedModules.txt', 'Output_Files/DownRegulatedNonDEGs_In_DEGenrichedModules.txt')		
 
 

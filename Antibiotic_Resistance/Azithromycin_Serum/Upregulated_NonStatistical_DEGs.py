@@ -3,7 +3,7 @@ from .DEG_Module_Enrichment import DEG_Enrichment
 
 class NonStatistical_DEG:
 	def UpDown_NonStatistical_DEGs(self, infile1, infile2, infile3, infile4, infile5, out_file1, out_file2):
-		DEG_Enrichment().Enrichment('PAO1_Nodes.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'PAO1_DEG_Modules.txt', 'PAO1_DEGMod_Enrichment.txt')
+		DEG_Enrichment().Enrichment('Input_Files/PAO1_Nodes.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEGMod_Enrichment.txt')
 
 		file1 = open( infile1,'r')
 		for i in range(2):
@@ -94,7 +94,7 @@ class NonStatistical_DEG:
 
 
 if __name__ == "__main__":
-	NonStatistical_DEG().UpDown_NonStatistical_DEGs('PAO1_DEGMod_Enrichment.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'AZM_SERUM_BiologicalReplicate.txt', 'AZM_SERUM_Paper.txt', 'PAO1_AMR_Annotations.tsv', 'All_Transcripts_In_DEGenrichedModules.txt', 'UpDownRegulatedNonDEGs_In_DEGenrichedModules.txt')
+	NonStatistical_DEG().UpDown_NonStatistical_DEGs('Output_Files/PAO1_DEGMod_Enrichment.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/AZM_SERUM_BiologicalReplicate.txt', 'Input_Files/AZM_SERUM_Paper.txt', 'Input_Files/PAO1_AMR_Annotations.tsv', 'Output_Files/All_Transcripts_In_DEGenrichedModules.txt', 'Output_Files/UpDownRegulatedNonDEGs_In_DEGenrichedModules.txt')
 
 
 

@@ -5,24 +5,24 @@ class DEG_Enrichment:
 	def DataPreprocess(self, outfile):
 		outfile = open(outfile,'w')
 		outfile.write('Transcript_Id'+'\t'+'Locus_Tag'+'\t'+'Fold_Change'+'\t'+'Gene_Name'+'\t'+'KO_Id'+'\t'+'Pvalue'+'\t'+'COG'+'\n')
-		infile_list = ['Murine_Dataset_UpRegulatedDEGs.txt', 'Murine_Dataset_DownRegulatedDEGs.txt']
+		infile_list = ['Input_Files/Murine_Dataset_UpRegulatedDEGs.txt', 'Input_Files/Murine_Dataset_DownRegulatedDEGs.txt']
 		for infl in infile_list:
 			Format = Data_Processer.Pathogenesis_Format(infl)
 			for f in Format:
 				outfile.write(f)
 		outfile.close()
 
-		fl_list = ['Pathogenesis_Vs_BiologicalReplicate.txt', 'PAO1_Upregulated_DEGs.txt', 'PAO1_Downregulated_DEGs.txt', 'PAO1_Cluster_DEG_BiologicalReplicates.txt']
+		fl_list = ['Output_Files/Pathogenesis_Vs_BiologicalReplicate.txt', 'Output_Files/PAO1_Upregulated_DEGs.txt', 'Output_Files/PAO1_Downregulated_DEGs.txt', 'Output_Files/PAO1_Cluster_DEG_BiologicalReplicates.txt']
 		Cluster = Data_Processer.DEG_Cluster(fl_list[0], fl_list[1], fl_list[2], fl_list[3])
 	
-		mod_clustlist = ['Module_Assignment_PAO1_WGCNA.tsv', 'PAO1_Modules_Clusters.txt', 'WGCNA_PAO1_Modules_Clusters.txt']
+		mod_clustlist = ['Input_Files/Module_Assignment_PAO1_WGCNA.tsv', 'Output_Files/PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt']
 		mod_cluster = Data_Processer.Modules_Cluster(mod_clustlist[0], mod_clustlist[1], mod_clustlist[2])
 
-		clus_mod_list = ['PAO1_Cluster_DEG_BiologicalReplicates.txt', 'Module_Assignment_PAO1_WGCNA.tsv', 'PAO1_DEG_Modules.txt', 'PAO1_DEG_Modules.txt', 'PAO1_DEG_Genes_Modules.txt']
+		clus_mod_list = ['Output_Files/PAO1_Cluster_DEG_BiologicalReplicates.txt', 'Input_Files/Module_Assignment_PAO1_WGCNA.tsv', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEG_Genes_Modules.txt']
 		Cluster_Modules = Data_Processer.DEGClusters_2_WGCNAModules(clus_mod_list[0], clus_mod_list[1], clus_mod_list[2], clus_mod_list[3], clus_mod_list[4])
 
 	def Enrichment(self, infile1, infile2, infile3, infile4, outfile):
-		self.DataPreprocess('Pathogenesis_Vs_BiologicalReplicate.txt')
+		self.DataPreprocess('Output_Files/Pathogenesis_Vs_BiologicalReplicate.txt')
 
 		nodes_file = open(infile1,'r')
 		line = nodes_file.readlines()
@@ -75,6 +75,6 @@ class DEG_Enrichment:
 		nodes_file.close(); file1.close(); file2.close(); outfile2.close()
 
 if __name__ == "__main__":
-	DEG_Enrichment().Enrichment('PAO1_Nodes.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'WGCNA_PAO1_Modules_Clusters.txt', 'PAO1_DEG_Modules.txt', 'PAO1_DEGMod_Enrichment.txt')
+	DEG_Enrichment().Enrichment('Input_Files/PAO1_Nodes.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEGMod_Enrichment.txt')
 
 
