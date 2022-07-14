@@ -1,49 +1,39 @@
 import re
 
 class Data_Processer:
-	def AMR_Format(infile1, infile2, infile3, infile4, out_file): 
-		file1 = open(infile1,'r')
-		for i in range(2):
-			line1 = file1.readline()
-		gene, log2FC, padj = [],[],[];
-		while line1:
-			split_line1 = (line1.rstrip()).split('\t'); #print(split_line1)
-			gene.append(split_line1[0])
-			log2FC.append(split_line1[-1])
-			padj.append(split_line1[4])
-			line1 = file1.readline()
+	def data_extract(self, infile, deletes):
+		f = open(infile, 'r')
+		lines = f.readlines()
+		dict_array = {}
+		split_l = ((lines[1]).rstrip()).split('\t')
+		for i in range(len(split_l)):
+			dict_array['arr_'+str(i)] = []
+		if (deletes == 0):
+			for l in lines:
+				split_l = (l.rstrip()).split('\t')
+				for x in range(len(split_l)):
+					dict_array['arr_'+str(x)].append(split_l[x])
+		elif (deletes > 0):
+			for l in lines[deletes:]:
+				split_l = (l.rstrip()).split('\t')
+				for x in range(len(split_l)):
+					dict_array['arr_'+str(x)].append(split_l[x])
+		f.close(); #print(dict_array);
+		return dict_array
 
-		file2 = open(infile2,'r')
-		for i in range(2):
-			line2 = file2.readline()
-		genes, log2fc, padjv = [],[],[];
-		while line2:
-			split_line2 = (line2.rstrip()).split('\t')
-			genes.append(split_line2[0])
-			log2fc.append(split_line2[2])
-			padjv.append(split_line2[-1])
-			line2 = file2.readline()
-
-		file3 = open(infile3,'r')
-		for i in range(2):
-			line3 = file3.readline()
-		while line3:
-			split_line3 = (line3.rstrip()).split('\t')
-			genes.append(split_line3[0])
-			log2fc.append(split_line3[2])
-			padjv.append(split_line3[-1])
-			line3 = file3.readline()
-
-		file4 = open(infile4,'r')
-		#for i in range(2):
-		line4 = file4.readline()
-		gene_id, transcript_id = [],[];
-		while line4:
-			split_line4 = (line4.rstrip()).split('\t')
-			gene_id.append(split_line4[0])
-			transcript_id.append(split_line4[1])
-			line4 = file4.readline()
-
+	def AMR_Format(self, infile1, infile2, infile3, infile4, out_file): 
+		dict1 = self.data_extract(infile1, 1)
+		gene, log2FC, padj = dict1['arr_0'], dict1['arr_6'], dict1['arr_4']
+		
+		dict2 = self.data_extract(infile2, 1)
+		genes, log2fc, padjv = dict2['arr_0'], dict2['arr_2'], dict2['arr_6']
+		
+		dict3 = self.data_extract(infile3, 1)
+		genes, log2fc, padjv = genes+dict3['arr_0'], log2fc+dict3['arr_2'], padjv+dict3['arr_6']
+		
+		dict4 = self.data_extract(infile4, 0)
+		gene_id, transcript_id = dict4['arr_0'], dict4['arr_1']
+		
 		outfile = open(out_file,'w')
 		outfile.write('Gene'+'\t'+'Log2FC'+'\t'+'Padj'+'\t'+'Transcript'+'\n')
 		for g in genes:
@@ -67,132 +57,84 @@ class Data_Processer:
 		outfile.close()
 	
 			
-	def DEG_Cluster(infile1, infile2, infile3, outfile):
-		file1 = open(infile1,'r')
-		file4 = open(outfile,'w')
+	def DEG_Cluster(self, infile1, infile2, infile3, outfile):
+		f = open(outfile,'w')
 
-		file2 = open(infile2,'r')
-		gene_id, transcript_id = [],[];
-		for line2 in file2:
-			split_line2 = (line2.rstrip()).split('\t')
-			gene_id.append(split_line2[0])
-			transcript_id.append(split_line2[1])
+		dict5 = self.data_extract(infile2, 0)
+		gene_id, transcript_id = dict5['arr_0'], dict5['arr_1']
+		
+		dict6 = self.data_extract(infile3, 1)
+		gene, log2FC, padj = dict6['arr_0'], dict6['arr_6'], dict6['arr_4']
 
-		file3 = open(infile3,'r')
-		for i in range(2):
-			line3 = file3.readline()
-		gene, log2FC, padj = [],[],[];
-		while line3:
-			split_line3 = (line3.rstrip()).split('\t'); #print(split_line3)
-			gene.append(split_line3[0])
-			log2FC.append(split_line3[-1])
-			padj.append(split_line3[4])
-			line3 = file3.readline()
+		dict7 = self.data_extract(infile1, 1)
+		genes = dict7['arr_0']
+		for i in range(len(genes)):
+			if ((genes[i] in gene_id) and (genes[i] in gene)):
+				indexes = int(gene_id.index(genes[i]))
+				f.write(transcript_id[indexes]+"\t")
+		f.write("\n")
+		f.close()
 
-		for i in range(2):
-			line1 = file1.readline()
-		while line1:
-			line1 = line1.rstrip()
-			split_line1 = line1.split('\t'); print(split_line1)
-			genes1 = split_line1[0]
-			if ((genes1 in gene_id) and (genes1 in gene)):
-				indexes = int(gene_id.index(genes1))
-				file4.write(transcript_id[indexes]+"\t")
-			line1 = file1.readline()
-		file4.write("\n")
-		file4.close()
-
-
-	def Modules_Cluster(infile, outfile1, outfile2):
-		file1 = open(infile,'r')
-		for i in range(2):
-			line1 = file1.readline()
-		genes, modules = [],[];
-		while line1:
-			line1 = (line1.rstrip()).replace('"','')
-			split_line1 = line1.split()
-			genes.append(split_line1[0])
-			modules.append(int(split_line1[1]))
-			line1 = file1.readline()
-		#print(len(genes),len(modules))
-
+	def Modules_Cluster(self, infile, outfile1, outfile2):
+		dict8 = self.data_extract(infile, 1)
+		genes, modules = dict8['arr_0'], dict8['arr_1']
+		
 		mods = []
 		for module in modules:
-			if module not in mods:
+			if int(module) not in mods:
 				mods.append(int(module))
 		mods.sort()
 		x = 0; gene=[];
-		file2 = open(outfile1,'w')
-		file3 = open(outfile2,'w')
+		file2 = open(outfile1,'w'); file3 = open(outfile2,'w');
 		for mod in mods:
 			file2.write(str(mod)+"\t")
 			for x in range(len(modules)):
-				if (modules[x] == mod):
-					#print(mod, modules[x], genes[x])
+				if (int(modules[x]) == int(mod)):
 					gene.append(genes[x])
 					file2.write(genes[x]+"\t")
 					file3.write(genes[x]+"\t")
-					#file2.write(str(mod)+"\t"+str(modules[x])+"\t"+genes[x]+"\n")
 			file2.write("\n"); file3.write("\n")
-		file1.close(); file2.close(); file3.close()
+		file2.close(); file3.close()
 
 
-	def DEGClusters_2_WGCNAModules(infile1, infile2, infile3, outfile1, outfile2):
-		
+	def DEGClusters_2_WGCNAModules(self, infile1, infile2, infile3, outfile1, outfile2):
 		# All DEGs
-		file1 = open(infile1,'r')
-		line1 = file1.readline()
+		file1 = open(infile1,'r'); file3 = open(outfile1,'w'); file5 = open(outfile2,'w')
+		line = file1.readline()
 		DEG_transcripts = []; indices = [];
-		while line1:
-			line1 = line1.rstrip()
-			split_line1 = line1.split('\t')
-			for tids in split_line1:
+		while line:
+			line = line.rstrip()
+			split_line = line.split('\t')
+			for tids in split_line:
 				DEG_transcripts.append(tids)
 			DEG_transcripts.append('\n')
-			line1 = file1.readline()
+			line = file1.readline()
 
 		for items in range(len(DEG_transcripts)):
 			if DEG_transcripts[items] == '\n':
 				indices.append(items); print(items)
 
 		# Modules using WGCNA
-		file2 = open(infile2,'r')
-		for i in range(2):
-			line2 = file2.readline()
-		modules, gene_id = [],[];
-		while line2:
-			line2 = line2.rstrip()
-			split_line2 = line2.split('\t')
-			gene_id.append(split_line2[0].replace('"',''))
-			modules.append(split_line2[1])
-			line2 = file2.readline()
-		print(DEG_transcripts,"\n",gene_id)
+		dict9 = self.data_extract(infile2,1) 
+		gene_ids, modules = dict9['arr_0'], dict9['arr_1']
+		gene_id = [val.replace('"','') for i, val in enumerate(gene_ids)]
 
-		file3 = open(outfile1,'w')
 		k = 0; DEG1_Module = [];
 		for genes in DEG_transcripts:
-			if (k < int(indices[0])):	# Cluster of Pathogenesis DEGs
+			if (k < int(indices[0])):	# Cluster of DEGs
 				if (genes in gene_id):
 					indexes = gene_id.index(genes); print(indexes, genes, gene_id[indexes]);
 					DEG1_Module.append(modules[indexes])
 					file3.write(gene_id[indexes]+"\t"+modules[indexes]+"\n")
 			k += 1
 
-		file3.close(); file1.close(); file2.close();
+		file3.close(); file1.close(); 
 
-		file4 = open(infile3,'r')
-		line4 = file4.readline()
-		geneid, mod = [],[];
-		while line4:
-			line4 = line4.rstrip()
-			split_line4 = line4.split('\t')
-			geneid.append(split_line4[0])
-			mod.append(int(split_line4[1]))
-			line4 = file4.readline()
+		dict5 = self.data_extract(infile3,0) 
+		geneid, mod = dict5['arr_0'], dict5['arr_1']
 
 		modset = sorted(set(mod), reverse=False); print(modset);
 
-		file5 = open(outfile2,'w')
 		for i in modset:
 			file5.write(str(i)+'\t')
 			indices = [index for index, element in enumerate(mod) if element == i]; #print(i, indices);
@@ -204,7 +146,7 @@ class Data_Processer:
 				elif m == len(indices):
 					file5.write(geneid[j]+'\n')
 
-
+		file5.close()
 
 
 

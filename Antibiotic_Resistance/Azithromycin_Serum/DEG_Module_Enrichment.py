@@ -4,16 +4,16 @@ from .DataProcess import Data_Processer
 class DEG_Enrichment:
 	def DataPreprocess(self):
 		infile_list = ['Input_Files/AZM_SERUM_Paper.txt', 'Input_Files/UpRegulated_AZM_Vs_SERUM.txt', 'Input_Files/DownRegulated_AZM_Vs_SERUM.txt', 'Input_Files/PAO1_AMR_Annotations.tsv', 'Output_Files/AZM_SERUM_BiologicalReplicate.txt']
-		Format = Data_Processer.AMR_Format(infile_list[0], infile_list[1], infile_list[2], infile_list[3], infile_list[4])
+		Format = Data_Processer().AMR_Format(infile_list[0], infile_list[1], infile_list[2], infile_list[3], infile_list[4])
 			
 		fl_list = ['Output_Files/AZM_SERUM_BiologicalReplicate.txt', 'Input_Files/PAO1_AMR_Annotations.tsv', 'Input_Files/AZM_SERUM_Paper.txt', 'Output_Files/PAO1_Cluster_DEG_BiologicalReplicates.txt']
-		Cluster = Data_Processer.DEG_Cluster(fl_list[0], fl_list[1], fl_list[2], fl_list[3])
+		Cluster = Data_Processer().DEG_Cluster(fl_list[0], fl_list[1], fl_list[2], fl_list[3])
 	
 		mod_clustlist = ['Input_Files/Module_Assignment_PAO1_WGCNA.tsv', 'Output_Files/PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt']
-		mod_cluster = Data_Processer.Modules_Cluster(mod_clustlist[0], mod_clustlist[1], mod_clustlist[2])
+		mod_cluster = Data_Processer().Modules_Cluster(mod_clustlist[0], mod_clustlist[1], mod_clustlist[2])
 
 		clus_mod_list = ['Output_Files/PAO1_Cluster_DEG_BiologicalReplicates.txt', 'Input_Files/Module_Assignment_PAO1_WGCNA.tsv', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEG_Genes_Modules.txt']
-		Cluster_Modules = Data_Processer.DEGClusters_2_WGCNAModules(clus_mod_list[0], clus_mod_list[1], clus_mod_list[2], clus_mod_list[3], clus_mod_list[4])
+		Cluster_Modules = Data_Processer().DEGClusters_2_WGCNAModules(clus_mod_list[0], clus_mod_list[1], clus_mod_list[2], clus_mod_list[3], clus_mod_list[4])
 
 	def Enrichment(self, infile1, infile2, infile3, infile4, outfile):
 		self.DataPreprocess()

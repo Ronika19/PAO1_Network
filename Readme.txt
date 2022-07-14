@@ -8,13 +8,22 @@ Requirements:
 To run the python scripts and generate output you need to run the shell script (Run_Codes.sh) by the following command:
 sh Run_Codes.sh
 
-Input Files:
+Input Files for Acute and Chronic Wound Infections:
 1. 'KEGG_PAO1_AllPathways.txt' file contains the pathway annotations for PAO1
 2. 'Module_Assignment_PAO1_WGCNA.tsv' file contains the module assignment of PAO1 genes involved in the network.
 3. 'Murine_Dataset_UpRegulatedDEGs.txt' and 'Murine_Dataset_DownRegulatedDEGs.txt' files contain the upregulated and downregulated DEGs respectively.
 4. 'PAO1_Annotations.tsv' file contain the Locustags and their corresponding Transcript ids.
 5. 'PAO1_Nodes.txt' file contain the nodes (transcript ids) of PAO1 involved in the network.
 6. 'pgen.1004518.s005.txt' file contains the fold changes and p-values for all PAO1 genes.
+7. 'Pseudomonas_aeruginosa_PAO1.gene_info' file containd the Entrez ids and Locustags for PAO1 genes.
+
+Input Files for Antibiotic Resistance:
+1. 'KEGG_PAO1_AllPathways.txt' file contains the pathway annotations for PAO1
+2. 'Module_Assignment_PAO1_WGCNA.tsv' file contains the module assignment of PAO1 genes involved in the network.
+3. 'UpRegulated_AZM_Vs_SERUM.txt' and 'DownRegulated_AZM_Vs_SERUM.txt' files contain the upregulated and downregulated DEGs respectively.
+4. 'PAO1_Annotations.tsv' file contain the Locustags and their corresponding Transcript ids.
+5. 'PAO1_Nodes.txt' file contain the nodes (transcript ids) of PAO1 involved in the network.
+6. 'AZM_SERUM_Paper.txt' file contains the fold changes and p-values for all PAO1 genes.
 7. 'Pseudomonas_aeruginosa_PAO1.gene_info' file containd the Entrez ids and Locustags for PAO1 genes.
 
 Output Files:

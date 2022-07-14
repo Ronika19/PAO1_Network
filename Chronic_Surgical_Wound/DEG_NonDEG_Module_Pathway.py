@@ -3,6 +3,7 @@ import sys
 import glob
 import pathlib
 from pathlib import Path
+from Murine_Chronic_Wound.DataProcess import Data_Processer
 from Murine_Chronic_Wound.Upregulated_NonStatistical_DEGs import NonStatistical_DEG
 
 class DEG_NonDEG_Module:
@@ -19,58 +20,16 @@ class DEG_NonDEG_Module:
 			module_length.append(len(split_line1))
 			mod_count += 1
 
-		file2 = open(infile2,'r')
-		for i in range(2):
-			line2 = file2.readline()
-		transcript_id, locus_tag, fold_change, gene_name, ko_id, pvalue, cog = [],[],[],[],[],[],[];
-		while line2:
-			split_line2 = (line2.rstrip()).split('\t')
-			transcript_id.append(split_line2[0])
-			locus_tag.append(split_line2[1])
-			fold_change.append(split_line2[2])
-			gene_name.append(split_line2[3])
-			ko_id.append(split_line2[4])
-			pvalue.append(split_line2[5])
-			cog.append(split_line2[6])
-			line2 = file2.readline()
+		dict_1 = Data_Processer().data_extract(infile2, 1)
+		transcript_id, locus_tag, fold_change, gene_name, ko_id, pvalue, cog = dict_1['arr_0'], dict_1['arr_1'], dict_1['arr_2'], dict_1['arr_3'], dict_1['arr_4'],  dict_1['arr_5'], dict_1['arr_6']
 
-		file3 = open(infile3,'r')
-		for i in range(2):
-			line3 = file3.readline()
-		modules, transcriptid, locustag, genename, expression_foldchange, expression_pvalue = [],[],[],[],[],[];
-		koid, cogid, module_foldchange, module_fishertest, cog_category = [],[],[],[],[];
-		while line3:
-			split_line3 = (line3.rstrip()).split('\t')
-			modules.append(split_line3[0])
-			transcriptid.append(split_line3[1]); #print(transcriptid);
-			locustag.append(split_line3[2])
-			genename.append(split_line3[3])
-			expression_foldchange.append(split_line3[4])
-			expression_pvalue.append(split_line3[5])
-			koid.append(split_line3[6])
-			cogid.append(split_line3[7])
-			module_foldchange.append(split_line3[8])
-			module_fishertest.append(split_line3[9])
-			cog_category.append(split_line3[10])
-			line3 = file3.readline()
+		dict_2 = Data_Processer().data_extract(infile3, 1)
+		modules, transcriptid, locustag, genename, expression_foldchange, expression_pvalue = dict_2['arr_0'], dict_2['arr_1'], dict_2['arr_2'], dict_2['arr_3'], dict_2['arr_4'],  dict_2['arr_5']
+		koid, cogid, module_foldchange, module_fishertest, cog_category = dict_2['arr_6'], dict_2['arr_7'], dict_2['arr_8'], dict_2['arr_9'], dict_2['arr_10']
 
-		file4 = open(infile4,'r')
-		for i in range(2):
-			line4 = file4.readline()
-		while line4:
-			split_line4 = (line4.rstrip()).split('\t')
-			modules.append(split_line4[0])
-			transcriptid.append(split_line4[1]); #print(transcriptid);
-			locustag.append(split_line4[2])
-			genename.append(split_line4[3])
-			expression_foldchange.append(split_line4[4])
-			expression_pvalue.append(split_line4[5])
-			koid.append(split_line4[6])
-			cogid.append(split_line4[7])
-			module_foldchange.append(split_line4[8])
-			module_fishertest.append(split_line4[9])
-			cog_category.append(split_line4[10])
-			line4 = file4.readline()
+		dict_3 = Data_Processer().data_extract(infile4, 1)
+		modules, transcriptid, locustag, genename, expression_foldchange, expression_pvalue = modules+dict_3['arr_0'], transcriptid+dict_3['arr_1'], locustag+dict_3['arr_2'], genename+dict_3['arr_3'], expression_foldchange+dict_3['arr_4'],  expression_pvalue+dict_3['arr_5']
+		koid, cogid, module_foldchange, module_fishertest, cog_category = koid+dict_3['arr_6'], cogid+dict_3['arr_7'], module_foldchange+dict_3['arr_8'], module_fishertest+dict_3['arr_9'], cog_category+dict_3['arr_10']
 
 		outfile = open(out_file,'w')
 		outfile.write('Module'+'\t'+'DEG_Count'+'\t'+'LDEG_Count'+'\t'+'Total_DEG_Count'+'\t'+'Module_Gene_Count'+'\t'+'DEG_Percent_In_Module'+'\t'+'LDEG_Percent_In_Module'+'\n')

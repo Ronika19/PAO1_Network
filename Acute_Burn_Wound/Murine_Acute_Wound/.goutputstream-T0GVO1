@@ -1,0 +1,51 @@
+import re
+import sys
+from .DataProcess1 import Data_Processer
+from .DEG_Module_Enrichment import DEG_Enrichment
+
+class NonStatistical_DEG:
+	def UpDown_NonStatistical_DEGs(self, infile1, infile2, infile3, infile4, infile5, infile6, out_file1, out_file2, out_file3):
+		DEG_Enrichment().Enrichment('Input_Files/PAO1_Nodes.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEGMod_Enrichment.txt')
+		dicts1 = Data_Processer.data_extract(infile1)
+		module, observed, expected, foldschange, fishertest = dicts1['arr_0'], dicts1['arr_1'], dicts1['arr_2'], dicts1['arr_3'], dicts1['arr_4']
+		for i in range(len(foldschange)):		
+			if (float(foldschange[i]) > 1): # DEG Enriched Modules with Fold Change is greater than 1
+
+		dicts2 = Data_Processer.data_extract(infile3)
+
+
+
+
+		dicts3 = Data_Processer.data_extract(infile4)
+
+
+
+
+		dicts4 = Data_Processer.data_extract(infile5)
+
+
+
+
+		dicts5 = Data_Processer.data_extract(infile6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

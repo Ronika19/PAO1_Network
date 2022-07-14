@@ -1,70 +1,44 @@
 import re
+from .DataProcess import Data_Processer
 from .DEG_Module_Enrichment import DEG_Enrichment
 
 class NonStatistical_DEG:
 	def UpDown_NonStatistical_DEGs(self, infile1, infile2, infile3, infile4, infile5, out_file1, out_file2):
 		DEG_Enrichment().Enrichment('Input_Files/PAO1_Nodes.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEGMod_Enrichment.txt')
 
-		file1 = open( infile1,'r')
-		for i in range(2):
-			line1 = file1.readline()
+		dicts1 = Data_Processer().data_extract(infile1, 1)
 		module, observed, expected, foldchange, fishertest = [],[],[],[],[]
 		stats_module, stats_foldchange, stats_fishertest = [],[],[]
-		while line1:
-			split_line1 = (line1.rstrip()).split('\t')
-			if (float(split_line1[3]) > 1): # DEG Enriched Modules with Fold Change is greater than 1
-				module.append(split_line1[0])
-				observed.append(split_line1[1])
-				expected.append(split_line1[2])
-				foldchange.append(split_line1[3])
-				fishertest.append(split_line1[4])
-				if (float(split_line1[4]) <= 0.05): # DEG Enriched Modules with p-value is less than equal to 0.05
-					stats_module.append(split_line1[0])
-					stats_foldchange.append(split_line1[3])
-					stats_fishertest.append(split_line1[4])
-			line1 = file1.readline()
+		modules, observed_degs, expected_degs, foldschange, fisher_test = dicts1['arr_0'], dicts1['arr_1'], dicts1['arr_2'], dicts1['arr_3'], dicts1['arr_4']
+		for i in range(len(foldschange)):		
+			if (float(foldschange[i]) > 1): # DEG Enriched Modules with Fold Change is greater than 1
+				module.append(modules[i])
+				observed.append(observed_degs[i])
+				expected.append(expected_degs[i])
+				foldchange.append(foldschange[i])
+				fishertest.append(fisher_test[i])
+				if (float(fisher_test[i]) <= 0.05): # DEG Enriched Modules with p-value is less than equal to 0.05
+					stats_module.append(modules[i])
+					stats_foldchange.append(foldschange[i])
+					stats_fishertest.append(fisher_test[i])
 
-		file5 = open( infile2,'r')
+		f = open(infile2,'r')
 		m=0; mod, transcript = [],[];
-		for line5 in file5:
-			split_line5 = (line5.rstrip()).split('\t')
+		for line in f:
+			split_line = (line.rstrip()).split('\t')
 			mod.append(str(m))
-			transcript.append(split_line5)
+			transcript.append(split_line)
 			m += 1
 
-		file3 = open( infile3,'r')
-		for i in range(2):
-			line3 = file3.readline()
-		locusid, foldchanges, pvalue = [],[],[];
-		while line3:
-			split_line3 = (line3.rstrip()).split('\t')
-			locusid.append(split_line3[0])
-			foldchanges.append(split_line3[1])
-			pvalue.append(split_line3[2])
-			line3 = file3.readline()
+		dicts2 = Data_Processer().data_extract(infile3, 1)
+		locusid, foldchanges, pvalue =  dicts2['arr_0'], dicts2['arr_1'], dicts2['arr_2']
 
-		file4 = open( infile4,'r')
-		for i in range(2):
-			line4 = file4.readline()
-		locus_id, fold_change, p_value = [],[],[];
-		while line4:
-			split_line4 = (line4.rstrip()).split('\t')
-			locus_id.append(split_line4[0])
-			#gene_name.append(split_line4[1])
-			fold_change.append(split_line4[-1])
-			p_value.append(split_line4[4])
-			line4 = file4.readline()
-
-		file6 = open( infile5,'r')
-		for i in range(2):
-			line6 = file6.readline()
-		locus_tag, transcript_tag = [],[];
-		while line6:
-			split_line6 = (line6.rstrip()).split('\t')
-			locus_tag.append(split_line6[0])
-			transcript_tag.append(split_line6[1]); #print(split_line6[6], split_line6[7]);
-			line6 = file6.readline()
-
+		dicts3 = Data_Processer().data_extract(infile4, 1)
+		locus_id, fold_change, p_value = dicts3['arr_0'], dicts3['arr_6'], dicts3['arr_4']
+		
+		dicts4 = Data_Processer().data_extract(infile5, 1)
+		locus_tag, transcript_tag = dicts4['arr_0'], dicts4['arr_1']
+		
 		outfile1 = open(out_file1,'w')
 		outfile1.write('Module'+'\t'+'Transcript_Id'+'\t'+'FoldChange_Module'+'\t'+'FisherTest_Module'+'\n')
 		outfile2 = open(out_file2,'w')

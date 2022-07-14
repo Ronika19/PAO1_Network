@@ -3,6 +3,7 @@ import sys
 import glob
 import pathlib
 from pathlib import Path
+from Azithromycin_Serum.DataProcess import Data_Processer
 from Azithromycin_Serum.Upregulated_NonStatistical_DEGs import NonStatistical_DEG
 
 class DEG_NonDEG_Module:
@@ -19,53 +20,23 @@ class DEG_NonDEG_Module:
 			module_length.append(len(split_line1))
 			mod_count += 1
 
-		file2 = open(infile2,'r')
-		for i in range(2):
-			line2 = file2.readline()
-		transcript_id, locus_tag, fold_change, pvalue = [],[],[],[];
-		while line2:
-			split_line2 = (line2.rstrip()).split('\t')
-			transcript_id.append(split_line2[3])
-			locus_tag.append(split_line2[0])
-			fold_change.append(split_line2[1])
-			pvalue.append(split_line2[2])
-			line2 = file2.readline()
+		dict_1 = Data_Processer().data_extract(infile2, 1)
+		transcript_id, locus_tag, fold_change, pvalue = dict_1['arr_3'], dict_1['arr_0'], dict_1['arr_1'], dict_1['arr_2']
+		
+		dict_2 = Data_Processer().data_extract(infile3, 0)
+		ltag, tid = dict_2['arr_0'], dict_2['arr_1']
 
-		file4 = open(infile3,'r')
-		ltag, tid = [],[];
-		for line4 in file4:
-			split_line4 = (line4.rstrip()).split('\t')
-			ltag.append(split_line4[0])
-			tid.append(split_line4[1])
-
-		file5 = open(infile4,'r')
-		for i in range(2):
-			line5 = file5.readline()
-		locusid, transcript_tag = [],[]
-		while line5:
-			split_line5 = (line5.rstrip()).split('\t')
-			locusid.append(split_line5[0])
-			if (split_line5[0] in ltag):
-				indexes = int(ltag.index(split_line5[0]))
+		dict_3 = Data_Processer().data_extract(infile4, 1)
+		locusid, transcript_tag = dict_3['arr_0'], []
+		for i in range(len(locusid)):
+			if (locusid[i] in ltag):
+				indexes = int(ltag.index(locusid[i]))
 				transcript_tag.append(tid[indexes])
-			line5 = file5.readline()
-
-		file3 = open(infile5,'r')
-		for i in range(2):
-			line3 = file3.readline()
-		modules, transcriptid, locustag, expression_foldchange, expression_pvalue = [],[],[],[],[];
-		module_foldchange, module_fishertest = [],[];
-		while line3:
-			split_line3 = (line3.rstrip()).split('\t')
-			modules.append(split_line3[0])
-			transcriptid.append(split_line3[1]); #print(transcriptid);
-			locustag.append(split_line3[2])
-			expression_foldchange.append(split_line3[3])
-			expression_pvalue.append(split_line3[4])
-			module_foldchange.append(split_line3[5])
-			module_fishertest.append(split_line3[6])
-			line3 = file3.readline()
-
+		
+		dict_4 = Data_Processer().data_extract(infile5, 1)
+		modules, transcriptid, locustag, expression_foldchange, expression_pvalue = dict_4['arr_0'], dict_4['arr_1'], dict_4['arr_2'], dict_4['arr_3'], dict_4['arr_4']
+		module_foldchange, module_fishertest = dict_4['arr_5'], dict_4['arr_6']
+		
 		outfile = open(out_file,'w')
 		counter=0;
 		outfile.write('Module'+'\t'+'DEG_Count'+'\t'+'LDEG_Count'+'\t'+'Total_DEG_Count'+'\t'+'Module_Gene_Count'+'\t'+'DEG+LDEG_Percent_In_Module'+'\t'+'DEG_Percent_In_Module'+'\n')
@@ -84,8 +55,8 @@ class DEG_NonDEG_Module:
 							counter += 1
 					elif (pvalue[ind] == 'NA'):
 						transcript_nondeg_count += 1
-				elif (((transcripts[i])[j] in transcriptid) and (pvalue[ind] != 'NA')):
-					transcript_nondeg_count += 1
+				#elif (((transcripts[i])[j] in transcriptid) and (pvalue[ind] != 'NA')):
+				#	transcript_nondeg_count += 1
 			transcript_count = transcript_deg_count+transcript_nondeg_count
 			print(module[i], transcript_deg_count, transcript_nondeg_count, transcript_count, module_length[i])
 			#if (float(transcript_count/int(module_length[i])) >= 0.9):

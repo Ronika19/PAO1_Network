@@ -1,92 +1,47 @@
 import re
+from .DataProcess import Data_Processer
+from .DataProcess import *
 from .DEG_Module_Enrichment import DEG_Enrichment
 
 class NonStatistical_DEG:
 	def UpDown_NonStatistical_DEGs(self, infile1, infile2, infile3, infile4, infile5, infile6, out_file1, out_file2, out_file3):
 		DEG_Enrichment().Enrichment('Input_Files/PAO1_Nodes.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Output_Files/PAO1_DEG_Modules.txt', 'Output_Files/PAO1_DEGMod_Enrichment.txt')
 		
-		file1 = open(infile1,'r')
-		for i in range(2):
-			line1 = file1.readline()
+		dicts1 = Data_Processer().data_extract(infile1, 1)
 		module, observed, expected, foldchange, fishertest = [],[],[],[],[]
 		stats_module, stats_foldchange, stats_fishertest = [],[],[]
-		while line1:
-			split_line1 = (line1.rstrip()).split('\t')
-			if (float(split_line1[3]) > 1): # DEG Enriched Modules with Fold Change is greater than 1
-				module.append(split_line1[0])
-				observed.append(split_line1[1])
-				expected.append(split_line1[2])
-				foldchange.append(split_line1[3])
-				fishertest.append(split_line1[4])
-				if (float(split_line1[4]) <= 0.05): # DEG Enriched Modules with p-value is less than equal to 0.05
-					stats_module.append(split_line1[0])
-					stats_foldchange.append(split_line1[3])
-					stats_fishertest.append(split_line1[4])
-			line1 = file1.readline()
+		modules, observed_degs, expected_degs, foldschange, fisher_test = dicts1['arr_0'], dicts1['arr_1'], dicts1['arr_2'], dicts1['arr_3'], dicts1['arr_4']
+		for i in range(len(foldschange)):		
+			if (float(foldschange[i]) > 1): # DEG Enriched Modules with Fold Change is greater than 1
+				module.append(modules[i])
+				observed.append(observed_degs[i])
+				expected.append(expected_degs[i])
+				foldchange.append(foldschange[i])
+				fishertest.append(fisher_test[i])
+				if (float(fisher_test[i]) <= 0.05): # DEG Enriched Modules with p-value is less than equal to 0.05
+					stats_module.append(modules[i])
+					stats_foldchange.append(foldschange[i])
+					stats_fishertest.append(fisher_test[i])
 
-		file5 = open(infile2,'r')
+		f = open(infile2,'r')
 		m=0; mod, transcript = [],[];
-		for line5 in file5:
-			split_line5 = (line5.rstrip()).split('\t')
+		for line in f:
+			split_line = (line.rstrip()).split('\t')
 			mod.append(str(m))
-			transcript.append(split_line5)
+			transcript.append(split_line)
 			m += 1
 
-		file2 = open(infile3,'r')
-		line2 = file2.readline()
-		locusid_down,transcriptid_down,genename_down,foldchanges_down,pvalue_down,koid_down,cogid_down,cogcategory_down = [],[],[],[],[],[],[],[];
-		while line2:
-			split_line2 = (line2.rstrip()).split('\t')
-			locusid_down.append(split_line2[0])
-			transcriptid_down.append(split_line2[1])
-			genename_down.append(split_line2[2])
-			foldchanges_down.append(split_line2[3])
-			pvalue_down.append(split_line2[4])
-			koid_down.append(split_line2[5])
-			cogid_down.append(split_line2[6])
-			cogcategory_down.append(split_line2[7])
-			line2 = file2.readline()
+		dicts2 = Data_Processer().data_extract(infile3, 0)
+		locusid_down, transcriptid_down, genename_down, foldchanges_down, pvalue_down, koid_down, cogid_down, cogcategory_down =  dicts2['arr_0'], dicts2['arr_1'], dicts2['arr_2'], dicts2['arr_3'], dicts2['arr_4'],  dicts2['arr_5'], dicts2['arr_6'], dicts2['arr_7']
 
-		file3 = open(infile4,'r')
-		for i in range(2):
-			line3 = file3.readline()
-		locusid, transcriptid, genename, foldchanges, pvalue, koid, cogid, cogcategory = [],[],[],[],[],[],[],[];
-		while line3:
-			split_line3 = (line3.rstrip()).split('\t')
-			locusid.append(split_line3[0])
-			transcriptid.append(split_line3[1])
-			genename.append(split_line3[2])
-			foldchanges.append(split_line3[3])
-			pvalue.append(split_line3[4])
-			koid.append(split_line3[5])
-			cogid.append(split_line3[6])
-			cogcategory.append(split_line3[7])
-			line3 = file3.readline()
+		dicts3 = Data_Processer().data_extract(infile4, 1)
+		locusid, transcriptid, genename, foldchanges, pvalue, koid, cogid, cogcategory = dicts3['arr_0'], dicts3['arr_1'], dicts3['arr_2'], dicts3['arr_3'], dicts3['arr_4'],  dicts3['arr_5'], dicts3['arr_6'], dicts3['arr_7']
 
-		file4 = open(infile5,'r')
-		for i in range(2):
-			line4 = file4.readline()
-		locus_id, gene_name, fold_change, p_value, ko_id, cog_id, cog_category = [],[],[],[],[],[],[];
-		while line4:
-			split_line4 = (line4.rstrip()).split('\t')
-			locus_id.append(split_line4[0])
-			gene_name.append(split_line4[1])
-			fold_change.append(split_line4[4])
-			p_value.append(split_line4[5])
-			ko_id.append(split_line4[6])
-			cog_id.append(split_line4[7])
-			cog_category.append(split_line4[8])
-			line4 = file4.readline()
+		dicts4 = Data_Processer().data_extract(infile5, 1)
+		locus_id, gene_name, fold_change, p_value, ko_id, cog_id, cog_category = dicts4['arr_0'], dicts4['arr_1'], dicts4['arr_4'], dicts4['arr_5'], dicts4['arr_6'], dicts4['arr_7'], dicts4['arr_8']
 
-		file6 = open(infile6,'r')
-		for i in range(2):
-			line6 = file6.readline()
-		locus_tag, transcript_tag = [],[];
-		while line6:
-			split_line6 = (line6.rstrip()).split('\t')
-			locus_tag.append(split_line6[6])
-			transcript_tag.append(split_line6[7]); #print(split_line6[6], split_line6[7]);
-			line6 = file6.readline()
+		dicts5 = Data_Processer().data_extract(infile6, 1)
+		locus_tag, transcript_tag = dicts5['arr_6'], dicts5['arr_7']
 
 		outfile1 = open(out_file1,'w')
 		outfile1.write('Module'+'\t'+'Transcript_Id'+'\t'+'FoldChange_Module'+'\t'+'FisherTest_Module'+'\n')
@@ -115,8 +70,7 @@ class NonStatistical_DEG:
 								if (locus_gene not in locusid_down): # Up-regulated DEGs not in paper.
 									outfile3.write(str(module[x])+'\t'+mod_transcripts[t]+'\t'+locus_gene+'\t'+gene_name[index3]+'\t'+fold_change[index3]+'\t'+p_value[index3]+'\t'+ko_id[index3]+'\t'+cog_id[index3]+'\t'+foldchange[x]+'\t'+fishertest[x]+'\t'+cog_category[index3]+'\n')
 
-		file1.close(); file2.close(); file3.close(); file4.close(); file5.close(); file6.close(); 
-		outfile1.close(); outfile2.close(); outfile3.close();
+		f.close(); outfile1.close(); outfile2.close(); outfile3.close();
 		
 if __name__ == "__main__":
 	NonStatistical_DEG().UpDown_NonStatistical_DEGs('Output_Files/PAO1_DEGMod_Enrichment.txt', 'Output_Files/WGCNA_PAO1_Modules_Clusters.txt', 'Input_Files/Murine_Dataset_DownRegulatedDEGs.txt', 'Input_Files/Murine_Dataset_UpRegulatedDEGs.txt', 'Input_Files/pgen.1004518.s005.txt', 'Input_Files/PAO1_Annotations.tsv', 'Output_Files/All_Transcripts_In_DEGenrichedModules.txt', 'Output_Files/UpRegulatedNonDEGs_In_DEGenrichedModules.txt', 'Output_Files/DownRegulatedNonDEGs_In_DEGenrichedModules.txt')		
